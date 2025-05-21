@@ -6,7 +6,14 @@ const Hero = () => {
     <section className="min-h-[90vh] flex items-center pt-16 overflow-hidden bg-gradient-to-b from-white to-senzei-taupe/10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 animate-fade-in">
+          <div className="space-y-6 animate-fade-in reveal">
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/500b3356-3e36-4164-a120-b51cd2745231.png" 
+                alt="Senzei Logo" 
+                className="h-12 mr-2"
+              />
+            </div>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-senzei-navy">
               Your AI-powered <span className="gradient-text">health mentor</span>
             </h1>
@@ -22,30 +29,13 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="relative h-[400px] flex justify-center items-center">
+          <div className="relative h-[600px] flex justify-center items-center reveal">
             <div className="absolute w-72 h-72 bg-senzei-orange/20 rounded-full filter blur-3xl"></div>
-            <div className="relative z-10 bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-senzei-taupe/30 w-full max-w-md">
-              <div className="text-senzei-navy font-medium mb-3">Today's AI Briefing</div>
-              <h3 className="text-2xl font-bold text-senzei-navy mb-4">Good morning, Alex</h3>
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                  <p>Your HRV is higher than yesterday (+8%)</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                  <p>Sleep quality was average (6.8/10)</p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                  <p>Recovery status: 85% (Good)</p>
-                </div>
-                <div className="mt-6 p-4 bg-senzei-navy/5 rounded-lg">
-                  <div className="font-medium mb-2">Recommendation:</div>
-                  <p className="text-senzei-navy/80">Ideal day for moderate training. Focus on hydration as your biomarkers indicate slight dehydration.</p>
-                </div>
-              </div>
-            </div>
+            <img
+              src="/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png"
+              alt="Senzei App Preview"
+              className="relative z-10 max-w-full h-auto rounded-xl shadow-xl"
+            />
           </div>
         </div>
       </div>

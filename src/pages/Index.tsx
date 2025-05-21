@@ -13,6 +13,12 @@ const Index = () => {
   useEffect(() => {
     // Update the document title
     document.title = "Senzei - Your AI-powered health mentor";
+    
+    // Update favicon
+    const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+    if (link) {
+      link.href = "/lovable-uploads/500b3356-3e36-4164-a120-b51cd2745231.png";
+    }
   }, []);
 
   return (
