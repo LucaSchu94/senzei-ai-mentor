@@ -29,12 +29,12 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="relative h-[600px] flex justify-center items-center reveal">
+          <div className="relative flex justify-center items-center reveal">
             <div className="absolute w-72 h-72 bg-senzei-orange/20 rounded-full filter blur-3xl"></div>
             <img
               src="/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png"
               alt="Senzei App Preview"
-              className="relative z-10 max-w-full h-auto rounded-xl shadow-xl"
+              className="relative z-10 max-w-full h-auto md:max-w-[80%] lg:max-w-[75%] rounded-xl shadow-xl"
             />
           </div>
         </div>
