@@ -1,10 +1,11 @@
 
 import { Button } from "@/components/ui/button";
+
 const Hero = () => {
   return <section className="min-h-[90vh] flex items-center pt-16 overflow-hidden bg-gradient-to-b from-white to-senzei-taupe/10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="py-20 bg-gradient-to-br from-blue-800 to-blue-900 rounded-xl shadow-lg p-8">
+          <div className="py-20 bg-gradient-to-tr from-[#1a73e8] to-[#3b7de8] rounded-xl shadow-lg p-8">
             <div className="flex items-center mb-4">
               <img src="/lovable-uploads/500b3356-3e36-4164-a120-b51cd2745231.png" alt="Senzei Logo" className="h-12 mr-2" />
             </div>
@@ -31,4 +32,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
