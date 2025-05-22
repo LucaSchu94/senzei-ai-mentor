@@ -71,8 +71,14 @@ const AISnapshot = () => {
             </li>
           </ul>
           
+          {/* Header for Case Example section */}
+          <div className="mt-16 mb-8">
+            <h3 className="text-2xl font-bold text-center text-senzei-orange">REAL RESULTS</h3>
+            <p className="text-center text-gray-300 mt-2">See how our AI-driven insights transform recovery journeys</p>
+          </div>
+          
           {/* Case Example Component */}
-          <div className="mt-16">
+          <div className="mt-8">
             <h3 className="text-2xl text-senzei-orange mb-6">Case Study: Michael's Recovery Journey</h3>
             
             <Card className="bg-[#1a2538] border-gray-700 shadow-lg">
