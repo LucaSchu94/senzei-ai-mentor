@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-6 border-t border-senzei-taupe/20 text-center text-sm text-senzei-navy/60">
-          <p>© 2024 Senzei. All rights reserved.</p>
+          <p>© 2025 Senzei. All rights reserved.</p>
         </div>
       </div>
     </footer>
