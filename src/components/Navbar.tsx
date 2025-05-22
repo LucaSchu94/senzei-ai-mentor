@@ -7,9 +7,9 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-6">
         <a href="#" className="flex items-center">
           <img 
-            src="/lovable-uploads/500b3356-3e36-4164-a120-b51cd2745231.png" 
+            src="/lovable-uploads/36e85ed4-3d57-46de-b0c1-7ffdb9f7bd97.png" 
             alt="Senzei Logo" 
-            className="h-8 mr-2"
+            className="h-10 mr-2"
           />
           <span className="text-xl font-bold text-senzei-navy">Senzei</span>
         </a>

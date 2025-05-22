@@ -8,9 +8,9 @@ const CTA = () => {
         <div className="max-w-3xl mx-auto reveal">
           <div className="flex justify-center mb-8">
             <img 
-              src="/lovable-uploads/500b3356-3e36-4164-a120-b51cd2745231.png" 
+              src="/lovable-uploads/36e85ed4-3d57-46de-b0c1-7ffdb9f7bd97.png" 
               alt="Senzei Logo" 
-              className="h-12"
+              className="h-16 object-contain"
             />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to unlock your next level of performance?</h2>
