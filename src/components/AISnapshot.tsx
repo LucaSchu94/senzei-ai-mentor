@@ -1,4 +1,3 @@
-
 import { ActivitySquare, Heart, CircleDot, CircleUser, BookText } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHeader, TableHead, TableRow } from "@/components/ui/table";
@@ -8,6 +7,12 @@ const AISnapshot = () => {
     <section className="py-20 bg-[#0f1627] text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto reveal">
+          {/* Header for Real Results section */}
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-center text-senzei-orange">REAL RESULTS</h3>
+            <p className="text-center text-gray-300 mt-2">See how our AI-driven insights transform recovery journeys</p>
+          </div>
+          
           <h2 className="text-3xl font-bold mb-8 text-center text-senzei-orange">AI SNAPSHOT</h2>
           
           <div className="space-y-6">
@@ -71,14 +76,8 @@ const AISnapshot = () => {
             </li>
           </ul>
           
-          {/* Header for Case Example section */}
-          <div className="mt-16 mb-8">
-            <h3 className="text-2xl font-bold text-center text-senzei-orange">REAL RESULTS</h3>
-            <p className="text-center text-gray-300 mt-2">See how our AI-driven insights transform recovery journeys</p>
-          </div>
-          
           {/* Case Example Component */}
-          <div className="mt-8">
+          <div className="mt-16">
             <h3 className="text-2xl text-senzei-orange mb-6">Case Study: Michael's Recovery Journey</h3>
             
             <Card className="bg-[#1a2538] border-gray-700 shadow-lg">
