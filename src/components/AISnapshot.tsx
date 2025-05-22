@@ -50,7 +50,7 @@ const AISnapshot = () => {
                 <span className="text-2xl">☹</span>
               </div>
               <span className="text-xl">Glucose</span>
-              <span className="ml-auto text-xl">Stable</span>
+              <span className="ml-auto text-xl">Lowered</span>
             </div>
             
             <div className="flex items-center gap-4">
