@@ -8,6 +8,7 @@ import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import RevealOnScroll from "@/components/RevealOnScroll";
+import AISnapshot from "@/components/AISnapshot";
 
 const Index = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const Index = () => {
       <Hero />
       <Features />
       <About />
+      <AISnapshot />
       <FAQ />
       <CTA />
       <Footer />
