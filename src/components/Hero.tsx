@@ -6,7 +6,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="py-20 bg-senzei-navy rounded-xl shadow-lg p-8">
             <div className="flex justify-center items-center mb-6">
-              <img src="/lovable-uploads/500b3356-3e36-4164-a120-b51cd2745231.png" alt="Senzei Logo" className="h-20" />
+              <img src="/lovable-uploads/36e85ed4-3d57-46de-b0c1-7ffdb9f7bd97.png" alt="Senzei Logo" className="h-20" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white mb-4">
               Your AI-powered <span className="text-senzei-orange">health mentor</span>
