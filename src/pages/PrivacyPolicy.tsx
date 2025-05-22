@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
           <p className="text-sm text-senzei-navy/70 mb-8">Last updated: May 2025</p>
 
           <p className="mb-6">
-            Senzei ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you sign up for our waitlist or use our website (senzei.ai).
+            Senzei is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you sign up for our waitlist or use our website (senzei.ai).
           </p>
 
           <h2 className="text-xl font-bold text-senzei-navy mt-8 mb-4">What information do we collect?</h2>
