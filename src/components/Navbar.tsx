@@ -6,11 +6,6 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-6">
         <a href="#" className="flex items-center">
-          <img 
-            src="/lovable-uploads/36e85ed4-3d57-46de-b0c1-7ffdb9f7bd97.png" 
-            alt="Senzei Logo" 
-            className="h-10 mr-2"
-          />
           <span className="text-xl font-bold text-senzei-navy">Senzei</span>
         </a>
         <div className="hidden md:flex space-x-8 text-sm">
