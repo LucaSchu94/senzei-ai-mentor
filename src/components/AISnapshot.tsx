@@ -1,5 +1,5 @@
 
-import { Hrv, SleepDuration, Training, EnergyLevel } from "lucide-react";
+import { ActivitySquare, Heart, CircleDot, CircleUser } from "lucide-react";
 
 const AISnapshot = () => {
   return (
@@ -10,7 +10,7 @@ const AISnapshot = () => {
           
           <div className="space-y-6">
             <div className="flex items-center gap-4">
-              <Hrv className="text-green-500 w-6 h-6" />
+              <ActivitySquare className="text-green-500 w-6 h-6" />
               <span className="text-xl">HRV</span>
               <span className="ml-auto text-xl">5.4 h</span>
             </div>
@@ -33,7 +33,7 @@ const AISnapshot = () => {
             </div>
             
             <div className="flex items-center gap-4">
-              <Training className="text-green-500 w-6 h-6" />
+              <Heart className="text-green-500 w-6 h-6" />
               <span className="text-xl">Training</span>
               <span className="ml-auto text-xl">0 min - rest day</span>
             </div>
@@ -47,7 +47,7 @@ const AISnapshot = () => {
             </div>
             
             <div className="flex items-center gap-4">
-              <EnergyLevel className="text-orange-400 w-6 h-6" />
+              <CircleDot className="text-orange-400 w-6 h-6" />
               <span className="text-xl">Energy Level</span>
               <span className="ml-auto text-xl">Exhausted</span>
             </div>
