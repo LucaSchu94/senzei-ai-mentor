@@ -1,4 +1,3 @@
-
 import { ActivitySquare, Heart, CircleDot, CircleUser, BookText } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHeader, TableHead, TableRow } from "@/components/ui/table";
@@ -18,7 +17,7 @@ const AISnapshot = () => {
             <div className="flex items-center gap-4">
               <ActivitySquare className="text-green-500 w-6 h-6" />
               <span className="text-xl">Sleeping Duration</span>
-              <span className="ml-auto text-xl">6.4 h</span>
+              <span className="ml-auto text-xl">52</span>
             </div>
             
             <div className="flex items-center gap-4">
