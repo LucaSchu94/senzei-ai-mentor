@@ -36,14 +36,6 @@ const About = () => {
                 <li>Modern, minimalistic premium design</li>
               </ul>
             </div>
-            
-            <div className="mt-12 flex justify-center">
-              <img 
-                src="/lovable-uploads/36e85ed4-3d57-46de-b0c1-7ffdb9f7bd97.png" 
-                alt="Senzei AI Snapshot Example" 
-                className="rounded-2xl shadow-lg max-w-full h-auto"
-              />
-            </div>
           </div>
         </div>
       </div>

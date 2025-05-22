@@ -1,26 +1,11 @@
 
 import { ActivitySquare, Heart, CircleDot, CircleUser } from "lucide-react";
-import { Progress } from "@/components/ui/progress";
 
 const AISnapshot = () => {
   return (
-    <section className="py-20 bg-[#0f1627] text-white relative overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/lovable-uploads/d763392c-59d1-4d16-901b-8973a1d57461.png" 
-          alt="Senzei AI Snapshot background" 
-          className="w-full h-full object-cover opacity-30"
-        />
-      </div>
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="py-20 bg-[#0f1627] text-white">
+      <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto reveal">
-          <div className="flex items-center justify-center mb-8">
-            <img 
-              src="/lovable-uploads/500b3356-3e36-4164-a120-b51cd2745231.png" 
-              alt="Senzei Logo" 
-              className="h-16 mb-2"
-            />
-          </div>
           <h2 className="text-3xl font-bold mb-8 text-center text-senzei-orange">AI SNAPSHOT</h2>
           
           <div className="space-y-6">
@@ -40,7 +25,9 @@ const AISnapshot = () => {
               </div>
               <span className="text-xl">Sleep Quality</span>
               <div className="ml-auto flex items-center gap-2">
-                <Progress value={30} className="w-32 h-2 bg-gray-700" />
+                <div className="w-32 h-2 bg-gray-700 rounded-full overflow-hidden">
+                  <div className="h-full bg-orange-400 rounded-full" style={{ width: "30%" }}></div>
+                </div>
                 <span className="text-xl">3/10</span>
               </div>
             </div>
