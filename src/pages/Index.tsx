@@ -9,6 +9,7 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import AISnapshot from "@/components/AISnapshot";
+import CaseExample from "@/components/CaseExample";
 
 const Index = () => {
   useEffect(() => {
@@ -30,6 +31,7 @@ const Index = () => {
       <Features />
       <About />
       <AISnapshot />
+      <CaseExample />
       <FAQ />
       <CTA />
       <Footer />
