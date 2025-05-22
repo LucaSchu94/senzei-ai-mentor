@@ -1,10 +1,8 @@
 import { ActivitySquare, Heart, CircleDot, CircleUser, BookText } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHeader, TableHead, TableRow } from "@/components/ui/table";
-
 const AISnapshot = () => {
-  return (
-    <section className="py-20 bg-[#0f1627] text-white">
+  return <section className="py-20 bg-[#0f1627] text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto reveal">
           {/* Header for Real Results section */}
@@ -19,7 +17,7 @@ const AISnapshot = () => {
             <div className="flex items-center gap-4">
               <ActivitySquare className="text-green-500 w-6 h-6" />
               <span className="text-xl">HRV</span>
-              <span className="ml-auto text-xl">5.4 h</span>
+              <span className="ml-auto text-xl">6.4 h</span>
             </div>
             
             <div className="flex items-center gap-4">
@@ -33,7 +31,9 @@ const AISnapshot = () => {
               <span className="text-xl">Sleep Quality</span>
               <div className="ml-auto flex items-center gap-2">
                 <div className="w-32 h-2 bg-gray-700 rounded-full overflow-hidden">
-                  <div className="h-full bg-orange-400 rounded-full" style={{ width: "30%" }}></div>
+                  <div className="h-full bg-orange-400 rounded-full" style={{
+                  width: "30%"
+                }}></div>
                 </div>
                 <span className="text-xl">3/10</span>
               </div>
@@ -136,8 +136,6 @@ const AISnapshot = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AISnapshot;
