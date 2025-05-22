@@ -1,5 +1,7 @@
 
-import { ActivitySquare, Heart, CircleDot, CircleUser } from "lucide-react";
+import { ActivitySquare, Heart, CircleDot, CircleUser, BookText } from "lucide-react";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHeader, TableHead, TableRow } from "@/components/ui/table";
 
 const AISnapshot = () => {
   return (
@@ -68,6 +70,65 @@ const AISnapshot = () => {
               Prioritize an early bedtime and avoid caffeine after 2 pm. Hydrate regularly and keep screens off 1 hour before sleep.
             </li>
           </ul>
+          
+          {/* Case Example Component */}
+          <div className="mt-16">
+            <h3 className="text-2xl text-senzei-orange mb-6">Case Study: Michael's Recovery Journey</h3>
+            
+            <Card className="bg-[#1a2538] border-gray-700 shadow-lg">
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <BookText className="w-6 h-6 text-senzei-orange" />
+                  <CardTitle className="text-white">Weekly Progress Report</CardTitle>
+                </div>
+                <CardDescription className="text-gray-300">
+                  30-year-old athlete recovering from shoulder injury
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Table>
+                  <TableHeader>
+                    <TableRow className="border-gray-700">
+                      <TableHead className="text-senzei-orange">Metric</TableHead>
+                      <TableHead className="text-senzei-orange">Week 1</TableHead>
+                      <TableHead className="text-senzei-orange">Week 4</TableHead>
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    <TableRow className="border-gray-700">
+                      <TableCell className="font-medium text-white">Sleep Quality</TableCell>
+                      <TableCell className="text-red-400">Poor (4/10)</TableCell>
+                      <TableCell className="text-green-400">Good (8/10)</TableCell>
+                    </TableRow>
+                    <TableRow className="border-gray-700">
+                      <TableCell className="font-medium text-white">Recovery Rate</TableCell>
+                      <TableCell className="text-red-400">Slow</TableCell>
+                      <TableCell className="text-green-400">Accelerated</TableCell>
+                    </TableRow>
+                    <TableRow className="border-gray-700">
+                      <TableCell className="font-medium text-white">Pain Level</TableCell>
+                      <TableCell className="text-red-400">7/10</TableCell>
+                      <TableCell className="text-green-400">2/10</TableCell>
+                    </TableRow>
+                    <TableRow className="border-gray-700">
+                      <TableCell className="font-medium text-white">Mobility</TableCell>
+                      <TableCell className="text-red-400">Limited</TableCell>
+                      <TableCell className="text-green-400">85% restored</TableCell>
+                    </TableRow>
+                  </TableBody>
+                </Table>
+                
+                <div className="mt-6 p-4 bg-[#131c2d] rounded-lg border border-gray-700">
+                  <p className="text-white italic">
+                    "Senzei helped me understand how my sleep patterns were directly impacting my recovery. 
+                    Following the AI recommendations improved my sleep quality dramatically, which accelerated 
+                    my healing process by an estimated 40%."
+                  </p>
+                  <p className="text-senzei-orange mt-2 font-semibold">— Michael T.</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
