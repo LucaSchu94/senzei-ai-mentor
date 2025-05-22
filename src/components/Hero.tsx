@@ -1,6 +1,11 @@
 
 import { Button } from "@/components/ui/button";
+
 const Hero = () => {
+  const handleJoinWaitlist = () => {
+    window.open("https://tally.so/r/3EYEM4", "_blank", "noopener,noreferrer");
+  };
+  
   return <section className="min-h-[90vh] flex items-center pt-16 overflow-hidden bg-senzei-navy">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -15,7 +20,11 @@ const Hero = () => {
               No confusing dashboards, no complexity – just focus, structure, and real results.
             </p>
             <div className="pt-4">
-              <Button size="lg" className="bg-senzei-orange hover:bg-senzei-orange/90 text-white rounded-full px-8">
+              <Button 
+                size="lg" 
+                className="bg-senzei-orange hover:bg-senzei-orange/90 text-white rounded-full px-8"
+                onClick={handleJoinWaitlist}
+              >
                 Join the Beta Waitlist →
               </Button>
             </div>
@@ -28,4 +37,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
