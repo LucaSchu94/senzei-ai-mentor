@@ -11,6 +11,11 @@ const Hero = () => {
       : "https://tally.so/r/3EYEM4";
     window.open(url, "_blank", "noopener,noreferrer");
   };
+
+  // Conditional image source based on language
+  const heroImageSrc = language === 'de' 
+    ? "/lovable-uploads/f886a5eb-7454-4886-b033-af4335f714dc.png" 
+    : "/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png";
   
   return (
     <section className="min-h-[90vh] flex items-center pt-16 overflow-hidden bg-senzei-navy">
@@ -41,7 +46,11 @@ const Hero = () => {
           </div>
           <div className="relative flex justify-center items-center reveal">
             <div className="absolute w-72 h-72 bg-senzei-orange/20 rounded-full filter blur-3xl"></div>
-            <img src="/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png" alt="Senzei App Preview" className="relative z-10 max-w-full h-auto md:max-w-[80%] lg:max-w-[75%] rounded-xl shadow-xl" />
+            <img 
+              src={heroImageSrc} 
+              alt="Senzei App Preview" 
+              className="relative z-10 max-w-full h-auto md:max-w-[80%] lg:max-w-[75%] rounded-xl shadow-xl" 
+            />
           </div>
         </div>
       </div>
