@@ -1,5 +1,4 @@
 
-
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
 
@@ -12,15 +11,6 @@ const Hero = () => {
       : "https://tally.so/r/3EYEM4";
     window.open(url, "_blank", "noopener,noreferrer");
   };
-
-  // Conditional image source based on language
-  const heroImageSrc = language === 'de' 
-    ? "/lovable-uploads/ad492650-8a01-4420-824c-7e26943eb344.png" 
-    : "/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png";
-  
-  // Debug logging
-  console.log('Current language:', language);
-  console.log('Hero image source:', heroImageSrc);
   
   return (
     <section className="min-h-[90vh] flex items-center pt-16 overflow-hidden bg-senzei-navy">
@@ -51,18 +41,7 @@ const Hero = () => {
           </div>
           <div className="relative flex justify-center items-center reveal">
             <div className="absolute w-72 h-72 bg-senzei-orange/20 rounded-full filter blur-3xl"></div>
-            <img 
-              src={heroImageSrc} 
-              alt="Senzei App Preview" 
-              className="relative z-10 max-w-full h-auto md:max-w-[80%] lg:max-w-[75%] rounded-xl shadow-xl"
-              onError={(e) => {
-                console.error('Image failed to load:', heroImageSrc);
-                console.error('Error details:', e);
-              }}
-              onLoad={() => {
-                console.log('Image loaded successfully:', heroImageSrc);
-              }}
-            />
+            <img src="/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png" alt="Senzei App Preview" className="relative z-10 max-w-full h-auto md:max-w-[80%] lg:max-w-[75%] rounded-xl shadow-xl" />
           </div>
         </div>
       </div>
@@ -71,4 +50,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
