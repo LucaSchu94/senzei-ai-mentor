@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -17,7 +18,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/4ed2c6de-675d-42c1-827f-d21efa4cd0e6.png" 
             alt="Senzei Logo" 
-            className="h-8 w-8 mr-1" 
+            className="h-10 w-10 mr-1" 
           />
           <span className="font-bold text-senzei-navy text-3xl">ENZEI</span>
         </a>
