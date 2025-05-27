@@ -16,6 +16,7 @@ export const translations = {
       subtitle: 'No confusing dashboards, no complexity – just focus, structure, and real results.',
       cta: 'Join the Beta Waitlist →'
     },
+    // Features
     features: {
       title: 'Core Features',
       subtitle: 'No complex dashboards – just clarity, structure, and progress',
@@ -38,6 +39,7 @@ export const translations = {
         }
       ]
     },
+    // About
     about: {
       title: 'About Senzei',
       subtitle: 'Your personal AI-powered high performance mentor',
@@ -63,6 +65,7 @@ export const translations = {
         'Modern, minimalistic premium design'
       ]
     },
+    // AI Snapshot
     aiSnapshot: {
       realResults: 'REAL RESULTS',
       realResultsSubtitle: 'See how our AI-driven insights transform recovery journeys',
@@ -113,6 +116,7 @@ export const translations = {
         author: '— Michael T.'
       }
     },
+    // Comparison
     comparison: {
       title: 'How Senzei is different',
       features: [
@@ -148,6 +152,7 @@ export const translations = {
         others: 'Other Health Apps'
       }
     },
+    // Evolution
     evolution: {
       title: 'Why Senzei Is the Next Evolution in Health Guidance',
       guidanceSection: {
@@ -168,6 +173,7 @@ export const translations = {
       integration: 'Your WHOOP, Oura, Apple Watch… Senzei makes sense of them all.',
       action: 'Less tracking, more action. Senzei tells you what to do—today.'
     },
+    // FAQ
     faq: {
       title: 'Frequently Asked Questions',
       items: [
@@ -193,11 +199,13 @@ export const translations = {
         }
       ]
     },
+    // CTA
     cta: {
       title: 'Ready to unlock your next level of performance?',
       description: 'Join our beta waitlist and be among the first to experience Senzei\'s AI-powered health mentoring.',
       button: 'Join the Beta Waitlist →'
     },
+    // Footer
     footer: {
       tagline: 'Your AI-powered health mentor',
       links: 'Links',
@@ -220,10 +228,12 @@ export const translations = {
       },
       copyright: '© 2025 Senzei. All rights reserved.'
     },
+    // Privacy
     privacy: {
       title: 'Senzei – Privacy Policy',
       lastUpdated: 'Last updated: May 2025'
     },
+    // Terms
     terms: {
       title: 'Senzei – Terms of Service',
       lastUpdated: 'Last updated: May 2025'
@@ -244,6 +254,7 @@ export const translations = {
       subtitle: 'Keine verwirrenden Dashboards, keine Komplexität – nur Fokus, Struktur und echte Ergebnisse.',
       cta: 'Der Beta-Warteliste beitreten →'
     },
+    // Features
     features: {
       title: 'Kernfunktionen',
       subtitle: 'Keine komplexen Dashboards – nur Klarheit, Struktur und Fortschritt',
@@ -266,6 +277,7 @@ export const translations = {
         }
       ]
     },
+    // About
     about: {
       title: 'Über Senzei',
       subtitle: 'Ihr persönlicher KI-gestützter Hochleistungsmentor',
@@ -291,6 +303,7 @@ export const translations = {
         'Modernes, minimalistisches Premium-Design'
       ]
     },
+    // AI Snapshot
     aiSnapshot: {
       realResults: 'ECHTE ERGEBNISSE',
       realResultsSubtitle: 'Sehen Sie, wie unsere KI-gestützten Einblicke Erholungsreisen transformieren',
@@ -341,6 +354,7 @@ export const translations = {
         author: '— Michael T.'
       }
     },
+    // Comparison
     comparison: {
       title: 'Wie sich Senzei unterscheidet',
       features: [
@@ -376,6 +390,7 @@ export const translations = {
         others: 'Andere Gesundheits-Apps'
       }
     },
+    // Evolution
     evolution: {
       title: 'Warum Senzei die nächste Evolution in der Gesundheitsberatung ist',
       guidanceSection: {
@@ -393,9 +408,10 @@ export const translations = {
     pullquotes: {
       decisions: 'Senzei. Ihr KI-gestützter Gesundheitsmentor. Keine Dashboards. Nur Entscheidungen.',
       clarity: 'Ertrinken Sie nicht in Daten. Erhalten Sie Klarheit, Struktur und tägliche Entscheidungen.',
-      integration: 'Ihr WHOOP, Oura, Apple Watch… Senzei macht aus allem einen Sinn.',
-      action: 'Weniger Tracking, mehr Handlung. Senzei sagt Ihnen, was zu tun ist – heute.'
+      action: 'Weniger Tracking, mehr Handlung. Senzei sagt Ihnen, was zu tun ist – heute.',
+      integration: 'Ihr WHOOP, Oura, Apple Watch… Senzei macht aus allem einen Sinn.'
     },
+    // FAQ
     faq: {
       title: 'Häufig gestellte Fragen',
       items: [
@@ -421,11 +437,13 @@ export const translations = {
         }
       ]
     },
+    // CTA
     cta: {
       title: 'Bereit, Ihr nächstes Leistungsniveau freizuschalten?',
       description: 'Treten Sie unserer Beta-Warteliste bei und gehören Sie zu den Ersten, die Senzeis KI-gestütztes Gesundheitsmentoring erleben.',
       button: 'Der Beta-Warteliste beitreten →'
     },
+    // Footer
     footer: {
       tagline: 'Ihr KI-gestützter Gesundheitsmentor',
       links: 'Links',
@@ -448,10 +466,12 @@ export const translations = {
       },
       copyright: '© 2025 Senzei. Alle Rechte vorbehalten.'
     },
+    // Privacy
     privacy: {
       title: 'Senzei – Datenschutzerklärung',
       lastUpdated: 'Zuletzt aktualisiert: Mai 2025'
     },
+    // Terms
     terms: {
       title: 'Senzei – Nutzungsbedingungen',
       lastUpdated: 'Zuletzt aktualisiert: Mai 2025'

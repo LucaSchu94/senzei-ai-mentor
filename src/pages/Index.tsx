@@ -40,11 +40,11 @@ const Index = () => {
       <Features />
       <Pullquote quoteKey="clarity" />
       <About />
-      <Pullquote quoteKey="integration" />
+      <Pullquote quoteKey="action" />
       <AISnapshot />
       <Comparison />
       <Evolution />
-      <Pullquote quoteKey="action" />
+      <Pullquote quoteKey="integration" />
       <FAQ />
       <CTA />
       <Footer />
