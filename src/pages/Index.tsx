@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Pullquote from "@/components/Pullquote";
 import Features from "@/components/Features";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
@@ -10,6 +11,7 @@ import Footer from "@/components/Footer";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import AISnapshot from "@/components/AISnapshot";
 import Comparison from "@/components/Comparison";
+import Evolution from "@/components/Evolution";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const Index = () => {
@@ -34,10 +36,15 @@ const Index = () => {
       <RevealOnScroll />
       <Navbar />
       <Hero />
+      <Pullquote quoteKey="decisions" />
       <Features />
+      <Pullquote quoteKey="clarity" />
       <About />
+      <Pullquote quoteKey="integration" />
       <AISnapshot />
       <Comparison />
+      <Evolution />
+      <Pullquote quoteKey="action" />
       <FAQ />
       <CTA />
       <Footer />

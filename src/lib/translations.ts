@@ -148,6 +148,26 @@ export const translations = {
         others: 'Other Health Apps'
       }
     },
+    evolution: {
+      title: 'Why Senzei Is the Next Evolution in Health Guidance',
+      guidanceSection: {
+        title: 'Guidance & Action, Not More Data',
+        content: 'Your AI-powered health mentor, not another wearable. Senzei - the AI that makes sense of all your health data, no matter what device you use. Integrate data from Apple Watch, Oura, Garmin, etc.—not just one ecosystem.',
+        description: 'Don\'t just rely on wearables—pull in nutrition, subjective mood, journal entries, glucose, even calendar. Position Senzei as "the orchestrator"—the place where all your signals become clarity.',
+        action: 'It gives simple daily briefings, micro-habits, routines, and check-ins—actionable "do this now" prompts, not just "your HRV is low."'
+      },
+      personalizationSection: {
+        title: 'Ultra-Personalization',
+        content: 'Senzei adapts to context: Mood, workday, travel, meetings, mental state, not just physical recovery. "Senzei learns your patterns and offers guidance tailored to your real life—not just your workouts."',
+        description: 'Your health guidance should understand your whole life, not just your fitness metrics. Senzei considers everything that affects your wellbeing.'
+      }
+    },
+    pullquotes: {
+      decisions: 'Senzei. Your AI-powered health mentor. No dashboards. Just decisions.',
+      clarity: 'Don\'t drown in data. Get clarity, structure, and daily decisions.',
+      integration: 'Your WHOOP, Oura, Apple Watch… Senzei makes sense of them all.',
+      action: 'Less tracking, more action. Senzei tells you what to do—today.'
+    },
     faq: {
       title: 'Frequently Asked Questions',
       items: [
@@ -355,6 +375,26 @@ export const translations = {
         senzei: 'Senzei',
         others: 'Andere Gesundheits-Apps'
       }
+    },
+    evolution: {
+      title: 'Warum Senzei die nächste Evolution in der Gesundheitsberatung ist',
+      guidanceSection: {
+        title: 'Beratung & Handlung, nicht mehr Daten',
+        content: 'Ihr KI-gestützter Gesundheitsmentor, nicht nur ein weiteres Wearable. Senzei - die KI, die all Ihre Gesundheitsdaten sinnvoll macht, egal welches Gerät Sie verwenden. Integrieren Sie Daten von Apple Watch, Oura, Garmin usw. – nicht nur ein Ökosystem.',
+        description: 'Verlassen Sie sich nicht nur auf Wearables – beziehen Sie Ernährung, subjektive Stimmung, Tagebucheinträge, Glukose, sogar Kalender mit ein. Positionieren Sie Senzei als "den Orchestrator" – den Ort, wo all Ihre Signale zu Klarheit werden.',
+        action: 'Es liefert einfache tägliche Briefings, Micro-Gewohnheiten, Routinen und Check-ins – umsetzbare "tue dies jetzt" Aufforderungen, nicht nur "deine HRV ist niedrig".'
+      },
+      personalizationSection: {
+        title: 'Ultra-Personalisierung',
+        content: 'Senzei passt sich dem Kontext an: Stimmung, Arbeitstag, Reisen, Meetings, Geisteszustand, nicht nur körperliche Erholung. "Senzei lernt Ihre Muster und bietet Beratung, die auf Ihr echtes Leben zugeschnitten ist – nicht nur auf Ihre Workouts."',
+        description: 'Ihre Gesundheitsberatung sollte Ihr ganzes Leben verstehen, nicht nur Ihre Fitness-Metriken. Senzei berücksichtigt alles, was Ihr Wohlbefinden beeinflusst.'
+      }
+    },
+    pullquotes: {
+      decisions: 'Senzei. Ihr KI-gestützter Gesundheitsmentor. Keine Dashboards. Nur Entscheidungen.',
+      clarity: 'Ertrinken Sie nicht in Daten. Erhalten Sie Klarheit, Struktur und tägliche Entscheidungen.',
+      integration: 'Ihr WHOOP, Oura, Apple Watch… Senzei macht aus allem einen Sinn.',
+      action: 'Weniger Tracking, mehr Handlung. Senzei sagt Ihnen, was zu tun ist – heute.'
     },
     faq: {
       title: 'Häufig gestellte Fragen',
