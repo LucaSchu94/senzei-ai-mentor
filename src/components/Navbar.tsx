@@ -18,7 +18,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/615d72c3-4c54-4308-adc4-5445165f1e59.png" 
             alt="Senzei Logo" 
-            className="h-8 w-auto"
+            className="h-12 w-auto"
           />
         </a>
         <div className="hidden md:flex space-x-8 text-sm">
