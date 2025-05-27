@@ -1,4 +1,3 @@
-
 export type Language = 'en' | 'de';
 
 export const translations = {
@@ -186,7 +185,7 @@ export const translations = {
     },
     hero: {
       title: 'Ihr KI-gestützter',
-      titleHighlight: '<br>Gesundheits<wbr>mentor',
+      titleHighlight: '<br>Gesundheits-<wbr>mentor',
       description: 'Senzei verbindet Ihre täglichen Daten, Gewohnheiten und Biomarker mit künstlicher Intelligenz – und liefert klare, personalisierte Empfehlungen für Höchstleistung, Erholung und intelligente Gesundheit.',
       subtitle: 'Keine verwirrenden Dashboards, keine Komplexität – nur Fokus, Struktur und echte Ergebnisse.',
       cta: 'Der Beta-Warteliste beitreten →'
