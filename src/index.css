@@ -61,6 +61,12 @@
   }
 }
 
+/* Prevent navbar from being affected by any scroll animations */
+nav {
+  transform: none !important;
+  transition: none !important;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
