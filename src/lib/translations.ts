@@ -114,7 +114,7 @@ export const translations = {
       }
     },
     comparison: {
-      title: 'How Senzei is different',
+      title: 'Why Senzei Is the Next Evolution in Health Guidance',
       features: [
         {
           feature: 'Focus',
@@ -322,7 +322,7 @@ export const translations = {
       }
     },
     comparison: {
-      title: 'Wie sich Senzei unterscheidet',
+      title: 'Warum Senzei die nächste Evolution in der Gesundheitsberatung ist',
       features: [
         {
           feature: 'Fokus',
