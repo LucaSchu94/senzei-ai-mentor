@@ -13,7 +13,7 @@ const Hero = () => {
 
   // Conditional image source based on language
   const heroImageSrc = language === 'de' 
-    ? "/lovable-uploads/615d72c3-4c54-4308-adc4-5445165f1e59.png" 
+    ? "/lovable-uploads/b9ae7baf-2689-440e-94d8-f65d3928cdf6.png" 
     : "/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png";
   
   return (
