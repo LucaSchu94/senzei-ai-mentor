@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
 
@@ -14,7 +15,7 @@ const Hero = () => {
 
   // Conditional image source based on language
   const heroImageSrc = language === 'de' 
-    ? "/lovable-uploads/b9ae7baf-2689-440e-94d8-f65d3928cdf6.png" 
+    ? "/lovable-uploads/ad492650-8a01-4420-824c-7e26943eb344.png" 
     : "/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png";
   
   // Debug logging
@@ -70,3 +71,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
