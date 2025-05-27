@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -14,13 +13,13 @@ const Navbar = () => {
   };
   return <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-6">
-        <a href="#" className="flex items-center gap-2">
+        <a href="#" className="flex items-center">
           <img 
             src="/lovable-uploads/4ed2c6de-675d-42c1-827f-d21efa4cd0e6.png" 
             alt="Senzei Logo" 
-            className="h-8 w-8" 
+            className="h-8 w-8 mr-1" 
           />
-          <span className="font-bold text-senzei-navy text-3xl">SENZEI</span>
+          <span className="font-bold text-senzei-navy text-3xl">ENZEI</span>
         </a>
         <div className="hidden md:flex space-x-8 text-sm">
           <a href="#features" className="text-senzei-navy/80 hover:text-senzei-navy transition-colors">{t('nav.features')}</a>
