@@ -3,10 +3,13 @@ import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const CTA = () => {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   
   const handleJoinWaitlist = () => {
-    window.open("https://tally.so/r/3EYEM4", "_blank", "noopener,noreferrer");
+    const url = language === 'de' 
+      ? "https://tally.so/r/w4yxaB" 
+      : "https://tally.so/r/3EYEM4";
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
