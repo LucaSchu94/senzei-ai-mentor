@@ -1,7 +1,11 @@
 
 import { Button } from "@/components/ui/button";
+import LanguageSelector from "@/components/LanguageSelector";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+  
   const handleJoinWaitlist = () => {
     window.open("https://tally.so/r/3EYEM4", "_blank", "noopener,noreferrer");
   };
@@ -13,16 +17,19 @@ const Navbar = () => {
           <span className="text-xl font-bold text-senzei-navy">SENZEI</span>
         </a>
         <div className="hidden md:flex space-x-8 text-sm">
-          <a href="#features" className="text-senzei-navy/80 hover:text-senzei-navy transition-colors">Features</a>
-          <a href="#about" className="text-senzei-navy/80 hover:text-senzei-navy transition-colors">About</a>
-          <a href="#faq" className="text-senzei-navy/80 hover:text-senzei-navy transition-colors">FAQ</a>
+          <a href="#features" className="text-senzei-navy/80 hover:text-senzei-navy transition-colors">{t('nav.features')}</a>
+          <a href="#about" className="text-senzei-navy/80 hover:text-senzei-navy transition-colors">{t('nav.about')}</a>
+          <a href="#faq" className="text-senzei-navy/80 hover:text-senzei-navy transition-colors">{t('nav.faq')}</a>
         </div>
-        <Button 
-          className="bg-senzei-orange hover:bg-senzei-orange/90 text-white"
-          onClick={handleJoinWaitlist}
-        >
-          Join Beta
-        </Button>
+        <div className="flex items-center gap-3">
+          <LanguageSelector />
+          <Button 
+            className="bg-senzei-orange hover:bg-senzei-orange/90 text-white"
+            onClick={handleJoinWaitlist}
+          >
+            {t('nav.joinBeta')}
+          </Button>
+        </div>
       </div>
     </nav>
   );

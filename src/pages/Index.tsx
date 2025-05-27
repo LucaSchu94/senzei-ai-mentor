@@ -9,18 +9,24 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import AISnapshot from "@/components/AISnapshot";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Index = () => {
+  const { t, language } = useTranslation();
+
   useEffect(() => {
-    // Update the document title
-    document.title = "Senzei - Your AI-powered health mentor";
+    // Update the document title based on language
+    const title = language === 'de' 
+      ? "Senzei - Ihr KI-gestützter Gesundheitsmentor"
+      : "Senzei - Your AI-powered health mentor";
+    document.title = title;
     
     // Update favicon
     const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
     if (link) {
       link.href = "/lovable-uploads/500b3356-3e36-4164-a120-b51cd2745231.png";
     }
-  }, []);
+  }, [language]);
 
   return (
     <div className="min-h-screen">
