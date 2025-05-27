@@ -68,7 +68,7 @@ export const translations = {
       realResultsSubtitle: 'See how our AI-driven insights transform recovery journeys',
       title: 'AI SNAPSHOT',
       metrics: {
-        sleepingDuration: 'Sleeping Duration',
+        sleepingDuration: 'HRV',
         sleepQuality: 'Sleep Quality',
         sleepDuration: 'Sleep Duration',
         training: 'Training',
@@ -242,7 +242,7 @@ export const translations = {
       realResultsSubtitle: 'Sehen Sie, wie unsere KI-gestützten Einblicke Erholungsreisen transformieren',
       title: 'KI-MOMENTAUFNAHME',
       metrics: {
-        sleepingDuration: 'Schlafdauer',
+        sleepingDuration: 'HRV',
         sleepQuality: 'Schlafqualität',
         sleepDuration: 'Schlafdauer',
         training: 'Training',
