@@ -14,8 +14,8 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="py-20 bg-senzei-navy rounded-xl shadow-lg p-8">
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white mb-6">
-              {t('hero.title')} <span className="text-senzei-orange">{t('hero.titleHighlight')}</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white mb-6">
+              {t('hero.title')} <span className="text-senzei-orange break-words">{t('hero.titleHighlight')}</span>
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-lg mb-4">
               {t('hero.description')}
