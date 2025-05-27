@@ -1,4 +1,3 @@
-
 export type Language = 'en' | 'de';
 
 export const translations = {
@@ -114,6 +113,41 @@ export const translations = {
         author: '— Michael T.'
       }
     },
+    comparison: {
+      title: 'How Senzei is different',
+      features: [
+        {
+          feature: 'Focus',
+          senzei: 'AI-powered daily briefings for actionable insights',
+          others: 'Complex dashboards with endless metrics'
+        },
+        {
+          feature: 'Data Integration',
+          senzei: 'Smart integration with mood, sleep, HRV, training & nutrition',
+          others: 'Limited to single data sources or manual tracking'
+        },
+        {
+          feature: 'Recommendations',
+          senzei: 'Personalized, AI-driven action plans for performance & recovery',
+          others: 'Generic tips or overwhelming information'
+        },
+        {
+          feature: 'User Experience',
+          senzei: 'Clean, minimalist design focused on clarity',
+          others: 'Cluttered interfaces with confusing navigation'
+        },
+        {
+          feature: 'Approach',
+          senzei: 'Holistic view combining physical & mental performance',
+          others: 'Fragmented tracking of individual metrics'
+        }
+      ],
+      headers: {
+        feature: 'Feature',
+        senzei: 'Senzei',
+        others: 'Other Health Apps'
+      }
+    },
     faq: {
       title: 'Frequently Asked Questions',
       items: [
@@ -166,7 +200,6 @@ export const translations = {
       },
       copyright: '© 2025 Senzei. All rights reserved.'
     },
-    // Legal pages
     privacy: {
       title: 'Senzei – Privacy Policy',
       lastUpdated: 'Last updated: May 2025'
@@ -288,6 +321,41 @@ export const translations = {
         author: '— Michael T.'
       }
     },
+    comparison: {
+      title: 'Wie sich Senzei unterscheidet',
+      features: [
+        {
+          feature: 'Fokus',
+          senzei: 'KI-gestützte tägliche Briefings für umsetzbare Erkenntnisse',
+          others: 'Komplexe Dashboards mit endlosen Metriken'
+        },
+        {
+          feature: 'Datenintegration',
+          senzei: 'Intelligente Integration von Stimmung, Schlaf, HRV, Training & Ernährung',
+          others: 'Begrenzt auf einzelne Datenquellen oder manuelle Verfolgung'
+        },
+        {
+          feature: 'Empfehlungen',
+          senzei: 'Personalisierte, KI-gesteuerte Aktionspläne für Leistung & Erholung',
+          others: 'Allgemeine Tipps oder überwältigende Informationen'
+        },
+        {
+          feature: 'Benutzererfahrung',
+          senzei: 'Sauberes, minimalistisches Design fokussiert auf Klarheit',
+          others: 'Überladene Benutzeroberflächen mit verwirrende Navigation'
+        },
+        {
+          feature: 'Ansatz',
+          senzei: 'Ganzheitliche Sicht auf körperliche & geistige Leistung',
+          others: 'Fragmentierte Verfolgung einzelner Metriken'
+        }
+      ],
+      headers: {
+        feature: 'Funktion',
+        senzei: 'Senzei',
+        others: 'Andere Gesundheits-Apps'
+      }
+    },
     faq: {
       title: 'Häufig gestellte Fragen',
       items: [
@@ -340,7 +408,6 @@ export const translations = {
       },
       copyright: '© 2025 Senzei. Alle Rechte vorbehalten.'
     },
-    // Legal pages
     privacy: {
       title: 'Senzei – Datenschutzerklärung',
       lastUpdated: 'Zuletzt aktualisiert: Mai 2025'

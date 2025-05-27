@@ -9,6 +9,7 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import RevealOnScroll from "@/components/RevealOnScroll";
 import AISnapshot from "@/components/AISnapshot";
+import Comparison from "@/components/Comparison";
 import { useTranslation } from "@/hooks/useTranslation";
 
 const Index = () => {
@@ -36,6 +37,7 @@ const Index = () => {
       <Features />
       <About />
       <AISnapshot />
+      <Comparison />
       <FAQ />
       <CTA />
       <Footer />
