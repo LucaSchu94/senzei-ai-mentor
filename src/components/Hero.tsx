@@ -11,6 +11,10 @@ const Hero = () => {
       : "https://tally.so/r/3EYEM4";
     window.open(url, "_blank", "noopener,noreferrer");
   };
+
+  const heroImage = language === 'de' 
+    ? "/lovable-uploads/hero-de.png" 
+    : "/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png";
   
   return (
     <section className="min-h-[90vh] flex items-center pt-16 overflow-hidden bg-senzei-navy">
@@ -41,7 +45,7 @@ const Hero = () => {
           </div>
           <div className="relative flex justify-center items-center reveal">
             <div className="absolute w-72 h-72 bg-senzei-orange/20 rounded-full filter blur-3xl"></div>
-            <img src="/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png" alt="Senzei App Preview" className="relative z-10 max-w-full h-auto md:max-w-[80%] lg:max-w-[75%] rounded-xl shadow-xl" />
+            <img src={heroImage} alt="Senzei App Preview" className="relative z-10 max-w-full h-auto md:max-w-[80%] lg:max-w-[75%] rounded-xl shadow-xl" />
           </div>
         </div>
       </div>
