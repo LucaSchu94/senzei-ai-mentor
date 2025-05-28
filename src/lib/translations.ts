@@ -1,4 +1,3 @@
-
 export type Language = 'en' | 'de';
 
 export const translations = {
@@ -287,8 +286,8 @@ export const translations = {
       title: 'Über Senzei',
       subtitle: 'Ihr persönlicher KI-gestützter Hochleistungsmentor',
       mission: {
-        title: 'Unser Leitbild',
-        content: 'Hochleistungssportler dabei zu unterstützen, mit Klarheit, Struktur und Zweck zu leben – indem wir komplexe Gesundheitsdaten in einfache, umsetzbare Anleitungen für Körper und Geist verwandeln.'
+        title: 'Unsere Mission',
+        content: 'High Performer dabei zu unterstützen, mit Klarheit, Struktur und Zweck zu leben – indem wir komplexe Gesundheitsdaten in einfache, umsetzbare Anleitungen für Körper und Geist verwandeln.'
       },
       cards: [
         {
