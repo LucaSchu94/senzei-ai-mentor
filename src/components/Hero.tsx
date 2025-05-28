@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
 
@@ -13,7 +12,7 @@ const Hero = () => {
   };
 
   const heroImage = language === 'de' 
-    ? "/lovable-uploads/hero-de.png" 
+    ? "/lovable-uploads/lovable-uploads_hero-de.png" 
     : "/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png";
   
   return (
