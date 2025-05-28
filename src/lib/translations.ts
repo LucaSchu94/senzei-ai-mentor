@@ -1,3 +1,4 @@
+
 export type Language = 'en' | 'de';
 
 export const translations = {
@@ -43,6 +44,10 @@ export const translations = {
     about: {
       title: 'About Senzei',
       subtitle: 'Your personal AI-powered high performance mentor',
+      mission: {
+        title: 'Our Mission Statement',
+        content: 'Empowering high performers to live with clarity, structure, and purpose—by transforming complex health data into simple, actionable guidance for body and mind.'
+      },
       cards: [
         {
           title: 'For whom is Senzei designed?',
@@ -281,6 +286,10 @@ export const translations = {
     about: {
       title: 'Über Senzei',
       subtitle: 'Ihr persönlicher KI-gestützter Hochleistungsmentor',
+      mission: {
+        title: 'Unser Leitbild',
+        content: 'Hochleistungssportler dabei zu unterstützen, mit Klarheit, Struktur und Zweck zu leben – indem wir komplexe Gesundheitsdaten in einfache, umsetzbare Anleitungen für Körper und Geist verwandeln.'
+      },
       cards: [
         {
           title: 'Für wen ist Senzei konzipiert?',
