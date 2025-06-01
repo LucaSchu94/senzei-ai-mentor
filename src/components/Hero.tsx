@@ -13,7 +13,7 @@ const Hero = () => {
 
   const heroImage = language === 'de' 
     ? "/lovable-uploads/lovable-uploads_hero-de.png" 
-    : "/lovable-uploads/7b9147bf-8340-4b5d-ac75-9c00740e9ac1.png";
+    : "/lovable-uploads/lovable-uploads_hero-eng.png";
   
   return (
     <section className="min-h-[90vh] flex items-center pt-16 overflow-hidden bg-senzei-navy">
