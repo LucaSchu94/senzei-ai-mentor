@@ -228,7 +228,8 @@ export const translations = {
       },
       legalLinks: {
         privacy: 'Privacy Policy',
-        terms: 'Terms of Service'
+        terms: 'Terms of Service',
+        imprint: 'Imprint'
       },
       copyright: '© 2025 Senzei. All rights reserved.'
     },
@@ -241,6 +242,11 @@ export const translations = {
     terms: {
       title: 'Senzei – Terms of Service',
       lastUpdated: 'Last updated: May 2025'
+    },
+    // Imprint
+    imprint: {
+      title: 'Imprint',
+      companyInfo: 'Company Information'
     }
   },
   de: {
@@ -470,7 +476,8 @@ export const translations = {
       },
       legalLinks: {
         privacy: 'Datenschutzerklärung',
-        terms: 'Nutzungsbedingungen'
+        terms: 'Nutzungsbedingungen',
+        imprint: 'Impressum'
       },
       copyright: '© 2025 Senzei. Alle Rechte vorbehalten.'
     },
@@ -483,6 +490,11 @@ export const translations = {
     terms: {
       title: 'Senzei – Nutzungsbedingungen',
       lastUpdated: 'Zuletzt aktualisiert: Mai 2025'
+    },
+    // Imprint
+    imprint: {
+      title: 'Impressum',
+      companyInfo: 'Firmeninformationen'
     }
   }
 };

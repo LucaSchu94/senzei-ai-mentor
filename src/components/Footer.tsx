@@ -41,6 +41,7 @@ const Footer = () => {
               <ul className="space-y-2 text-sm">
                 <li><Link to="/privacy-policy" className="text-senzei-navy/70 hover:text-senzei-orange transition-colors">{t('footer.legalLinks.privacy')}</Link></li>
                 <li><Link to="/terms-of-service" className="text-senzei-navy/70 hover:text-senzei-orange transition-colors">{t('footer.legalLinks.terms')}</Link></li>
+                <li><Link to="/imprint" className="text-senzei-navy/70 hover:text-senzei-orange transition-colors">{t('footer.legalLinks.imprint')}</Link></li>
               </ul>
             </div>
           </div>
