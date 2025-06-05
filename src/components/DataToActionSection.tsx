@@ -68,29 +68,34 @@ const DataToActionSection = () => {
           ))}
         </div>
 
-        {/* Daily Briefing Visual */}
-        <div className="flex justify-center mb-16">
-          <img 
-            src={dailyBriefingImage}
-            alt="iPhone showing Senzei daily briefing with personalized health recommendations"
-            className="max-w-sm h-auto rounded-xl shadow-lg"
-          />
-        </div>
-
-        {/* What Makes Senzei Unique */}
+        {/* What Makes Senzei Unique - Two Column Layout */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-senzei-navy text-center mb-8">
             {t('dataToAction.unique.title')}
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {uniquePoints.map((point: any, index: number) => <Card key={index} className="border border-senzei-taupe/20 hover:shadow-lg transition-shadow">
-                <CardContent className="p-6 text-center">
-                  <h4 className="font-semibold text-senzei-navy mb-3">{point.title}</h4>
-                  <p className="text-senzei-navy/70 text-sm leading-relaxed">
-                    {point.description}
-                  </p>
-                </CardContent>
-              </Card>)}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Unique Points */}
+            <div className="space-y-6">
+              {uniquePoints.map((point: any, index: number) => (
+                <Card key={index} className="border border-senzei-taupe/20 hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <h4 className="font-semibold text-senzei-navy mb-3">{point.title}</h4>
+                    <p className="text-senzei-navy/70 text-sm leading-relaxed">
+                      {point.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            {/* Right Column - iPhone Mock */}
+            <div className="flex justify-center lg:justify-start">
+              <img 
+                src={dailyBriefingImage}
+                alt="iPhone showing Senzei daily briefing with personalized health recommendations"
+                className="max-w-sm h-auto rounded-xl shadow-lg"
+              />
+            </div>
           </div>
         </div>
 
