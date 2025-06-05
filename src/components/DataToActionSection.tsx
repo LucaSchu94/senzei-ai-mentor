@@ -1,19 +1,19 @@
+
 import { useTranslation } from "@/hooks/useTranslation";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/lib/translations";
+
 const DataToActionSection = () => {
-  const {
-    t
-  } = useTranslation();
-  const {
-    language
-  } = useLanguage();
+  const { t } = useTranslation();
+  const { language } = useLanguage();
 
   // Access array data directly from translations
   const steps = translations[language].dataToAction.howItWorks.steps;
   const uniquePoints = translations[language].dataToAction.unique.points;
-  return <section id="data-to-action" className="py-20 bg-white reveal">
+
+  return (
+    <section id="data-to-action" className="py-20 bg-white reveal">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -31,7 +31,11 @@ const DataToActionSection = () => {
             {t('dataToAction.howItWorks.title')}
           </h3>
           <div className="flex justify-center mb-12">
-            <img src="/lovable-uploads/senzei_flowchart-technology.png" alt="Senzei technology flowchart showing how AI transforms health data into personalized daily actions" className="max-w-full h-auto rounded-xl shadow-lg" />
+            <img 
+              src="/lovable-uploads/senzei_flowchart-technology 3.0.png" 
+              alt="Senzei technology flowchart showing how AI transforms health data into personalized daily actions" 
+              className="max-w-full h-auto rounded-xl shadow-lg" 
+            />
           </div>
         </div>
 
@@ -72,6 +76,8 @@ const DataToActionSection = () => {
         {/* Privacy Assurance */}
         
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default DataToActionSection;
