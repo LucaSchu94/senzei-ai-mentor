@@ -1,3 +1,4 @@
+
 export type Language = 'en' | 'de';
 
 export const translations = {
@@ -14,6 +15,7 @@ export const translations = {
       titleHighlight: 'health mentor',
       description: 'Senzei connects your daily data, habits, and biomarkers with artificial intelligence – delivering clear, personalized recommendations for high performance, recovery, and smart health.',
       subtitle: 'No confusing dashboards, no complexity – just focus, structure, and real results.',
+      betaOffer: 'Join the Beta Waitlist → Get early access + 3 months free premium',
       cta: 'Join the Beta Waitlist →'
     },
     // Features
@@ -358,6 +360,7 @@ export const translations = {
       titleHighlight: '<br>Gesundheitsmentor',
       description: 'Senzei verbindet Ihre täglichen Daten, Gewohnheiten und Biomarker mit künstlicher Intelligenz – und liefert klare, personalisierte Empfehlungen für Höchstleistung, Erholung und intelligente Gesundheit.',
       subtitle: 'Keine verwirrenden Dashboards, keine Komplexität – nur Fokus, Struktur und echte Ergebnisse.',
+      betaOffer: 'Der Beta-Warteliste beitreten → Früher Zugang + 3 Monate kostenlos Premium',
       cta: 'Der Beta-Warteliste beitreten →'
     },
     // Features

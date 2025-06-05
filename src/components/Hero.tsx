@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/hooks/useTranslation";
 
@@ -32,6 +33,11 @@ const Hero = () => {
             <p className="text-white/80 mb-6">
               {t('hero.subtitle')}
             </p>
+            <div className="mb-3">
+              <p className="text-senzei-orange font-semibold text-lg">
+                {t('hero.betaOffer')}
+              </p>
+            </div>
             <div className="pt-4">
               <Button 
                 size="lg" 
