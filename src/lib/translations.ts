@@ -1,5 +1,3 @@
-
-
 export type Language = 'en' | 'de';
 
 export const translations = {
@@ -286,6 +284,18 @@ export const translations = {
         {
           question: 'Is my data secure with Senzei?',
           answer: 'Absolutely. We take data privacy and security very seriously. All your personal health data is encrypted and stored securely, and you maintain full control over what data you share with us. We never sell your data. All information is securely stored and fully under your control.'
+        },
+        {
+          question: 'Which devices does Senzei support?',
+          answer: 'Senzei integrates with Apple Health and Whoop, with plans to support additional platforms soon.'
+        },
+        {
+          question: 'Who is behind Senzei?',
+          answer: 'Our team comprises experts in health technology and artificial intelligence, dedicated to simplifying health optimization.'
+        },
+        {
+          question: 'How much does Senzei cost?',
+          answer: 'Senzei is currently in beta. We\'re actively refining our features based on user feedback. Pricing details will be announced closer to our official launch. Early beta users will receive exclusive offers.'
         }
       ]
     },
@@ -618,6 +628,18 @@ export const translations = {
         {
           question: 'Sind meine Daten bei Senzei sicher?',
           answer: 'Absolut. Wir nehmen Datenschutz und Sicherheit sehr ernst. Alle Ihre persönlichen Gesundheitsdaten werden verschlüsselt und sicher gespeichert, und Sie behalten die volle Kontrolle darüber, welche Daten Sie mit uns teilen. Wir verkaufen niemals Ihre Daten. Alle Informationen werden sicher gespeichert und stehen vollständig unter Ihrer Kontrolle.'
+        },
+        {
+          question: 'Welche Geräte unterstützt Senzei?',
+          answer: 'Senzei integriert sich mit Apple Health und Whoop, mit Plänen, bald weitere Plattformen zu unterstützen.'
+        },
+        {
+          question: 'Wer steht hinter Senzei?',
+          answer: 'Unser Team besteht aus Experten für Gesundheitstechnologie und künstliche Intelligenz, die sich der Vereinfachung der Gesundheitsoptimierung widmen.'
+        },
+        {
+          question: 'Wie viel kostet Senzei?',
+          answer: 'Senzei befindet sich derzeit in der Beta-Phase. Wir verfeinern aktiv unsere Funktionen basierend auf Nutzerfeedback. Preisdetails werden näher zum offiziellen Launch bekannt gegeben. Frühe Beta-Nutzer erhalten exklusive Angebote.'
         }
       ]
     },
