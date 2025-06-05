@@ -73,7 +73,7 @@ const DataToActionSection = () => {
           <h3 className="text-2xl font-bold text-senzei-navy text-center mb-8">
             {t('dataToAction.unique.title')}
           </h3>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left Column - Unique Points */}
             <div className="space-y-6">
               {uniquePoints.map((point: any, index: number) => (
@@ -89,11 +89,11 @@ const DataToActionSection = () => {
             </div>
 
             {/* Right Column - iPhone Mock */}
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center">
               <img 
                 src={dailyBriefingImage}
                 alt="iPhone showing Senzei daily briefing with personalized health recommendations"
-                className="max-w-sm h-auto rounded-xl shadow-lg"
+                className="max-w-xs md:max-w-sm h-auto rounded-xl shadow-lg"
               />
             </div>
           </div>
