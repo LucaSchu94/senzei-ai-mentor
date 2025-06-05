@@ -1,9 +1,16 @@
 
 import { useTranslation } from "@/hooks/useTranslation";
 import { Card, CardContent } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/lib/translations";
 
 const DataToActionSection = () => {
   const { t } = useTranslation();
+  const { language } = useLanguage();
+
+  // Access array data directly from translations
+  const steps = translations[language].dataToAction.howItWorks.steps;
+  const uniquePoints = translations[language].dataToAction.unique.points;
 
   return (
     <section id="data-to-action" className="py-20 bg-white reveal">
@@ -34,7 +41,7 @@ const DataToActionSection = () => {
 
         {/* How It Works Steps */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {t('dataToAction.howItWorks.steps').map((step: any, index: number) => (
+          {steps.map((step: any, index: number) => (
             <Card key={index} className="border border-senzei-taupe/20 hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
@@ -57,7 +64,7 @@ const DataToActionSection = () => {
             {t('dataToAction.unique.title')}
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
-            {t('dataToAction.unique.points').map((point: any, index: number) => (
+            {uniquePoints.map((point: any, index: number) => (
               <Card key={index} className="border border-senzei-taupe/20 hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
                   <h4 className="font-semibold text-senzei-navy mb-3">{point.title}</h4>
