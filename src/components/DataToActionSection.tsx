@@ -12,6 +12,11 @@ const DataToActionSection = () => {
   const steps = translations[language].dataToAction.howItWorks.steps;
   const uniquePoints = translations[language].dataToAction.unique.points;
 
+  // Select the appropriate flowchart image based on language
+  const flowchartImage = language === 'de' 
+    ? "/lovable-uploads/senzei_flowchart-technology 3.0-de.png"
+    : "/lovable-uploads/senzei_flowchart-technology 3.0.png";
+
   return (
     <section id="data-to-action" className="py-20 bg-white reveal">
       <div className="container mx-auto px-4">
@@ -32,7 +37,7 @@ const DataToActionSection = () => {
           </h3>
           <div className="flex justify-center mb-12">
             <img 
-              src="/lovable-uploads/senzei_flowchart-technology 3.0.png" 
+              src={flowchartImage}
               alt="Senzei technology flowchart showing how AI transforms health data into personalized daily actions" 
               className="max-w-full h-auto rounded-xl shadow-lg" 
             />
