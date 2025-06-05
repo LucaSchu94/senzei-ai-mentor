@@ -20,6 +20,11 @@ const CTA = () => {
           <p className="text-lg text-white/80 mb-8">
             {t('cta.description')}
           </p>
+          <div className="mb-4">
+            <p className="text-senzei-orange font-semibold text-lg">
+              {t('hero.betaOffer')}
+            </p>
+          </div>
           <Button 
             size="lg" 
             className="bg-senzei-orange hover:bg-senzei-orange/90 text-white rounded-full px-10 py-6 text-lg"
