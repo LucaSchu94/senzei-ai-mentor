@@ -49,35 +49,32 @@ const DataToActionSection = () => {
           </div>
         </div>
 
-        {/* How It Works - Two Column Layout */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-16 items-center">
-          {/* iPhone Mock Visual */}
-          <div className="flex justify-center lg:justify-end">
-            <img 
-              src={dailyBriefingImage}
-              alt="iPhone showing Senzei daily briefing with personalized health recommendations"
-              className="max-w-sm h-auto rounded-xl shadow-lg"
-            />
-          </div>
-          
-          {/* Steps */}
-          <div className="space-y-6">
-            {steps.map((step: any, index: number) => (
-              <Card key={index} className="border border-senzei-taupe/20 hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <div className="w-8 h-8 bg-senzei-orange text-white rounded-full flex items-center justify-center font-bold text-sm mr-3">
-                      {index + 1}
-                    </div>
-                    <h4 className="font-semibold text-senzei-navy">{step.title}</h4>
+        {/* How It Works Steps */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {steps.map((step: any, index: number) => (
+            <Card key={index} className="border border-senzei-taupe/20 hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-8 h-8 bg-senzei-orange text-white rounded-full flex items-center justify-center font-bold text-sm mr-3">
+                    {index + 1}
                   </div>
-                  <p className="text-senzei-navy/70 text-sm leading-relaxed">
-                    {step.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                  <h4 className="font-semibold text-senzei-navy">{step.title}</h4>
+                </div>
+                <p className="text-senzei-navy/70 text-sm leading-relaxed">
+                  {step.description}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Daily Briefing Visual */}
+        <div className="flex justify-center mb-16">
+          <img 
+            src={dailyBriefingImage}
+            alt="iPhone showing Senzei daily briefing with personalized health recommendations"
+            className="max-w-sm h-auto rounded-xl shadow-lg"
+          />
         </div>
 
         {/* What Makes Senzei Unique */}
