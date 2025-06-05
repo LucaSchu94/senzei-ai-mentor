@@ -1,3 +1,4 @@
+
 export type Language = 'en' | 'de';
 
 export const translations = {
@@ -194,14 +195,6 @@ export const translations = {
           {
             title: 'Transparent Model',
             description: 'Be clear about pricing and value; reward early users with lifetime or tiered access.'
-          },
-          {
-            title: 'Personalized Context',
-            description: 'Explain why a recommendation is given (linking data to real-world actions and context).'
-          },
-          {
-            title: 'Flexible Use',
-            description: 'Don\'t require users to wear one device 24/7 for value—work with what\'s available.'
           }
         ]
       },
@@ -230,6 +223,16 @@ export const translations = {
           feature: 'Approach',
           senzei: 'Holistic view combining physical & mental performance',
           others: 'Fragmented tracking of individual metrics'
+        },
+        {
+          feature: 'Personalized Context',
+          senzei: 'Explains why recommendations are given, linking data to real-world actions and context',
+          others: 'Generic recommendations without context or explanation'
+        },
+        {
+          feature: 'Device Flexibility',
+          senzei: 'Works with available devices - no need to wear one device 24/7',
+          others: 'Requires specific devices or constant wearing for full value'
         }
       ],
       headers: {
@@ -524,14 +527,6 @@ export const translations = {
           {
             title: 'Transparentes Modell',
             description: 'Klarheit über Preise und Wert; frühe Nutzer mit lebenslangem oder gestuftem Zugang belohnen.'
-          },
-          {
-            title: 'Personalisierter Kontext',
-            description: 'Erklären, warum eine Empfehlung gegeben wird (Daten mit realen Handlungen und Kontext verknüpfen).'
-          },
-          {
-            title: 'Flexible Nutzung',
-            description: 'Nicht verlangen, dass Nutzer ein Gerät 24/7 tragen müssen – mit dem arbeiten, was verfügbar ist.'
           }
         ]
       },
@@ -560,6 +555,16 @@ export const translations = {
           feature: 'Ansatz',
           senzei: 'Ganzheitliche Sicht auf körperliche & geistige Leistung',
           others: 'Fragmentierte Verfolgung einzelner Metriken'
+        },
+        {
+          feature: 'Personalisierter Kontext',
+          senzei: 'Erklärt, warum Empfehlungen gegeben werden (Daten mit realen Handlungen und Kontext verknüpfen)',
+          others: 'Allgemeine Empfehlungen ohne Kontext oder Erklärung'
+        },
+        {
+          feature: 'Geräte-Flexibilität',
+          senzei: 'Funktioniert mit verfügbaren Geräten – kein 24/7-Tragen eines Geräts erforderlich',
+          others: 'Erfordert spezifische Geräte oder ständiges Tragen für vollen Nutzen'
         }
       ],
       headers: {
