@@ -1,4 +1,5 @@
 
+
 export type Language = 'en' | 'de';
 
 export const translations = {
@@ -201,7 +202,7 @@ export const translations = {
       features: [
         {
           feature: 'Focus',
-          senzei: 'AI-powered daily briefings for actionable insights',
+          senzei: 'AI-powered daily briefings for actionable insights — no dashboards, just decisions',
           others: 'Complex dashboards with endless metrics'
         },
         {
@@ -533,7 +534,7 @@ export const translations = {
       features: [
         {
           feature: 'Fokus',
-          senzei: 'KI-gestützte tägliche Briefings für umsetzbare Erkenntnisse',
+          senzei: 'KI-gestützte tägliche Briefings für umsetzbare Erkenntnisse — keine Dashboards, nur Entscheidungen',
           others: 'Komplexe Dashboards mit endlosen Metriken'
         },
         {
