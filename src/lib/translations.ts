@@ -281,7 +281,7 @@ export const translations = {
         },
         {
           question: 'Is my data secure with Senzei?',
-          answer: 'Absolutely. We take data privacy and security very seriously. All your personal health data is encrypted and stored securely, and you maintain full control over what data you share with us.'
+          answer: 'Absolutely. We take data privacy and security very seriously. All your personal health data is encrypted and stored securely, and you maintain full control over what data you share with us. We never sell your data. All information is securely stored and fully under your control.'
         }
       ]
     },
@@ -611,7 +611,7 @@ export const translations = {
         },
         {
           question: 'Sind meine Daten bei Senzei sicher?',
-          answer: 'Absolut. Wir nehmen Datenschutz und Sicherheit sehr ernst. Alle Ihre persönlichen Gesundheitsdaten werden verschlüsselt und sicher gespeichert, und Sie behalten die volle Kontrolle darüber, welche Daten Sie mit uns teilen.'
+          answer: 'Absolut. Wir nehmen Datenschutz und Sicherheit sehr ernst. Alle Ihre persönlichen Gesundheitsdaten werden verschlüsselt und sicher gespeichert, und Sie behalten die volle Kontrolle darüber, welche Daten Sie mit uns teilen. Wir verkaufen niemals Ihre Daten. Alle Informationen werden sicher gespeichert und stehen vollständig unter Ihrer Kontrolle.'
         }
       ]
     },
