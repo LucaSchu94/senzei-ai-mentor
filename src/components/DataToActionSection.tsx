@@ -1,19 +1,19 @@
-
 import { useTranslation } from "@/hooks/useTranslation";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/lib/translations";
-
 const DataToActionSection = () => {
-  const { t } = useTranslation();
-  const { language } = useLanguage();
+  const {
+    t
+  } = useTranslation();
+  const {
+    language
+  } = useLanguage();
 
   // Access array data directly from translations
   const steps = translations[language].dataToAction.howItWorks.steps;
   const uniquePoints = translations[language].dataToAction.unique.points;
-
-  return (
-    <section id="data-to-action" className="py-20 bg-white reveal">
+  return <section id="data-to-action" className="py-20 bg-white reveal">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -31,18 +31,13 @@ const DataToActionSection = () => {
             {t('dataToAction.howItWorks.title')}
           </h3>
           <div className="flex justify-center mb-12">
-            <img 
-              src="/lovable-uploads/senzei_flowchart-technology.png"
-              alt="Senzei technology flowchart showing how AI transforms health data into personalized daily actions"
-              className="max-w-full h-auto rounded-xl shadow-lg"
-            />
+            <img src="/lovable-uploads/senzei_flowchart-technology.png" alt="Senzei technology flowchart showing how AI transforms health data into personalized daily actions" className="max-w-full h-auto rounded-xl shadow-lg" />
           </div>
         </div>
 
         {/* How It Works Steps */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {steps.map((step: any, index: number) => (
-            <Card key={index} className="border border-senzei-taupe/20 hover:shadow-lg transition-shadow">
+          {steps.map((step: any, index: number) => <Card key={index} className="border border-senzei-taupe/20 hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-8 h-8 bg-senzei-orange text-white rounded-full flex items-center justify-center font-bold text-sm mr-3">
@@ -54,8 +49,7 @@ const DataToActionSection = () => {
                   {step.description}
                 </p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* What Makes Senzei Unique */}
@@ -64,31 +58,20 @@ const DataToActionSection = () => {
             {t('dataToAction.unique.title')}
           </h3>
           <div className="grid md:grid-cols-3 gap-6">
-            {uniquePoints.map((point: any, index: number) => (
-              <Card key={index} className="border border-senzei-taupe/20 hover:shadow-lg transition-shadow">
+            {uniquePoints.map((point: any, index: number) => <Card key={index} className="border border-senzei-taupe/20 hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
                   <h4 className="font-semibold text-senzei-navy mb-3">{point.title}</h4>
                   <p className="text-senzei-navy/70 text-sm leading-relaxed">
                     {point.description}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
         {/* Privacy Assurance */}
-        <div className="bg-senzei-taupe/10 rounded-xl p-8 text-center">
-          <h3 className="text-xl font-semibold text-senzei-navy mb-4">
-            {t('dataToAction.privacy.title')}
-          </h3>
-          <p className="text-senzei-navy/80 max-w-2xl mx-auto">
-            {t('dataToAction.privacy.description')}
-          </p>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default DataToActionSection;
