@@ -15,7 +15,7 @@ const DataToActionSection = () => {
   // Select the appropriate flowchart image based on language
   const flowchartImage = language === 'de' 
     ? "/lovable-uploads/senzei_flowchart-technology 3.0-de.png"
-    : "/lovable-uploads/senzei_flowchart-technology 3.0.png";
+    : "/lovable-uploads/senzei_flowchart-technology 3.0-eng.png";
 
   return (
     <section id="data-to-action" className="py-20 bg-white reveal">
