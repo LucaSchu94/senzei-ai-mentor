@@ -1,20 +1,20 @@
-
 import { useTranslation } from "@/hooks/useTranslation";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/lib/translations";
-
 const Comparison = () => {
-  const { t } = useTranslation();
-  const { language } = useLanguage();
+  const {
+    t
+  } = useTranslation();
+  const {
+    language
+  } = useLanguage();
 
   // Access array data directly from translations
   const userQuotes = translations[language].comparison.userQuotes.quotes;
   const solutions = translations[language].comparison.solutions.items;
   const features = translations[language].comparison.features;
-
-  return (
-    <section id="comparison" className="py-20 bg-senzei-taupe/5 reveal">
+  return <section id="comparison" className="py-20 bg-senzei-taupe/5 reveal">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -29,15 +29,13 @@ const Comparison = () => {
             {t('comparison.userQuotes.title')}
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {userQuotes.map((quote: string, index: number) => (
-              <Card key={index} className="border border-senzei-taupe/20 bg-white">
+            {userQuotes.map((quote: string, index: number) => <Card key={index} className="border border-senzei-taupe/20 bg-white">
                 <CardContent className="p-6">
                   <p className="text-senzei-navy/80 italic text-center">
                     {quote}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -46,20 +44,7 @@ const Comparison = () => {
           <h3 className="text-2xl font-bold text-senzei-navy text-center mb-8">
             {t('comparison.solutions.title')}
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {solutions.map((solution: any, index: number) => (
-              <Card key={index} className="border border-senzei-orange/20 bg-senzei-orange/5 hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <h4 className="font-semibold text-senzei-navy mb-3 text-center">
-                    {solution.title}
-                  </h4>
-                  <p className="text-senzei-navy/70 text-sm leading-relaxed text-center">
-                    {solution.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          
         </div>
 
         {/* Feature Comparison Table */}
@@ -79,13 +64,7 @@ const Comparison = () => {
               </tr>
             </thead>
             <tbody>
-              {features.map((feature: any, index: number) => (
-                <tr 
-                  key={index} 
-                  className={`border-b border-senzei-taupe/20 ${
-                    index % 2 === 0 ? 'bg-senzei-taupe/5' : 'bg-white'
-                  }`}
-                >
+              {features.map((feature: any, index: number) => <tr key={index} className={`border-b border-senzei-taupe/20 ${index % 2 === 0 ? 'bg-senzei-taupe/5' : 'bg-white'}`}>
                   <td className="py-4 px-6 font-semibold text-senzei-navy">
                     {feature.feature}
                   </td>
@@ -95,14 +74,11 @@ const Comparison = () => {
                   <td className="py-4 px-6 text-senzei-navy/70">
                     {feature.others}
                   </td>
-                </tr>
-              ))}
+                </tr>)}
             </tbody>
           </table>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Comparison;
