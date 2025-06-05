@@ -32,8 +32,8 @@ const DataToActionSection = () => {
           </h3>
           <div className="flex justify-center mb-12">
             <img 
-              src="/lovable-uploads/a0002470-2c16-4c31-a2c2-b789a075a8fd.png"
-              alt="Data flow visualization showing how Senzei transforms health data into daily actions"
+              src="/lovable-uploads/senzei_flowchart-technology.png"
+              alt="Senzei technology flowchart showing how AI transforms health data into personalized daily actions"
               className="max-w-full h-auto rounded-xl shadow-lg"
             />
           </div>
