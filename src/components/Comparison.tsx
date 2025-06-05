@@ -1,103 +1,104 @@
 
 import { useTranslation } from "@/hooks/useTranslation";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Check, X } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/lib/translations";
 
 const Comparison = () => {
   const { t } = useTranslation();
+  const { language } = useLanguage();
+
+  // Access array data directly from translations
+  const userQuotes = translations[language].comparison.userQuotes.quotes;
+  const solutions = translations[language].comparison.solutions.items;
+  const features = translations[language].comparison.features;
 
   return (
-    <section className="py-20 bg-white">
+    <section id="comparison" className="py-20 bg-senzei-taupe/5 reveal">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-senzei-navy mb-4">
-              {t('comparison.title')}
-            </h2>
-          </div>
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-senzei-navy mb-6">
+            {t('comparison.title')}
+          </h2>
+        </div>
 
-          {/* Desktop Table */}
-          <div className="hidden md:block reveal">
-            <div className="bg-white rounded-2xl shadow-sm border border-senzei-taupe/30 overflow-hidden">
-              <Table>
-                <TableHeader>
-                  <TableRow className="bg-senzei-taupe/10">
-                    <TableHead className="text-senzei-navy font-semibold text-lg py-6">
-                      {t('comparison.headers.feature')}
-                    </TableHead>
-                    <TableHead className="text-senzei-navy font-semibold text-lg py-6 text-center">
-                      {t('comparison.headers.senzei')}
-                    </TableHead>
-                    <TableHead className="text-senzei-navy font-semibold text-lg py-6 text-center">
-                      {t('comparison.headers.others')}
-                    </TableHead>
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {Array.from({ length: 5 }).map((_, index) => (
-                    <TableRow key={index} className="border-b border-senzei-taupe/20">
-                      <TableCell className="font-medium text-senzei-navy py-6 text-base">
-                        {t(`comparison.features.${index}.feature`)}
-                      </TableCell>
-                      <TableCell className="py-6 text-center">
-                        <div className="flex items-center justify-center space-x-2 text-green-600">
-                          <Check size={20} />
-                          <span className="text-senzei-navy text-sm">
-                            {t(`comparison.features.${index}.senzei`)}
-                          </span>
-                        </div>
-                      </TableCell>
-                      <TableCell className="py-6 text-center">
-                        <div className="flex items-center justify-center space-x-2 text-red-500">
-                          <X size={20} />
-                          <span className="text-senzei-navy/70 text-sm">
-                            {t(`comparison.features.${index}.others`)}
-                          </span>
-                        </div>
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </div>
-          </div>
-
-          {/* Mobile Cards */}
-          <div className="md:hidden space-y-6 reveal">
-            {Array.from({ length: 5 }).map((_, index) => (
-              <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-senzei-taupe/30">
-                <h3 className="text-lg font-bold text-senzei-navy mb-4">
-                  {t(`comparison.features.${index}.feature`)}
-                </h3>
-                
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <Check size={20} className="text-green-600 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <div className="font-medium text-senzei-orange text-sm mb-1">
-                        {t('comparison.headers.senzei')}
-                      </div>
-                      <div className="text-senzei-navy text-sm">
-                        {t(`comparison.features.${index}.senzei`)}
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-3">
-                    <X size={20} className="text-red-500 mt-0.5 flex-shrink-0" />
-                    <div>
-                      <div className="font-medium text-senzei-navy/70 text-sm mb-1">
-                        {t('comparison.headers.others')}
-                      </div>
-                      <div className="text-senzei-navy/70 text-sm">
-                        {t(`comparison.features.${index}.others`)}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        {/* User Quotes Section */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-senzei-navy text-center mb-8">
+            {t('comparison.userQuotes.title')}
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {userQuotes.map((quote: string, index: number) => (
+              <Card key={index} className="border border-senzei-taupe/20 bg-white">
+                <CardContent className="p-6">
+                  <p className="text-senzei-navy/80 italic text-center">
+                    {quote}
+                  </p>
+                </CardContent>
+              </Card>
             ))}
           </div>
+        </div>
+
+        {/* How Senzei Solves These Pain Points */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-senzei-navy text-center mb-8">
+            {t('comparison.solutions.title')}
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {solutions.map((solution: any, index: number) => (
+              <Card key={index} className="border border-senzei-orange/20 bg-senzei-orange/5 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-senzei-navy mb-3 text-center">
+                    {solution.title}
+                  </h4>
+                  <p className="text-senzei-navy/70 text-sm leading-relaxed text-center">
+                    {solution.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Feature Comparison Table */}
+        <div className="overflow-x-auto">
+          <table className="w-full bg-white rounded-xl shadow-lg">
+            <thead>
+              <tr className="bg-senzei-navy text-white">
+                <th className="py-4 px-6 text-left font-semibold">
+                  {t('comparison.headers.feature')}
+                </th>
+                <th className="py-4 px-6 text-left font-semibold">
+                  {t('comparison.headers.senzei')}
+                </th>
+                <th className="py-4 px-6 text-left font-semibold">
+                  {t('comparison.headers.others')}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {features.map((feature: any, index: number) => (
+                <tr 
+                  key={index} 
+                  className={`border-b border-senzei-taupe/20 ${
+                    index % 2 === 0 ? 'bg-senzei-taupe/5' : 'bg-white'
+                  }`}
+                >
+                  <td className="py-4 px-6 font-semibold text-senzei-navy">
+                    {feature.feature}
+                  </td>
+                  <td className="py-4 px-6 text-senzei-navy bg-senzei-orange/10">
+                    {feature.senzei}
+                  </td>
+                  <td className="py-4 px-6 text-senzei-navy/70">
+                    {feature.others}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>

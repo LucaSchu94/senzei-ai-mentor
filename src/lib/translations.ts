@@ -170,6 +170,41 @@ export const translations = {
     // Comparison
     comparison: {
       title: 'How Senzei is different',
+      userQuotes: {
+        title: 'What Users Really Say About Health Apps',
+        quotes: [
+          '"I love the data, but I don\'t know what to do with it."',
+          '"I wish the app just told me what matters most today."',
+          '"I want everything in one place—not a dozen dashboards and subscriptions."',
+          '"It\'s expensive, especially with the subscription on top of the device."',
+          '"Great for tracking, but not for daily decisions."'
+        ]
+      },
+      solutions: {
+        title: 'How Senzei Solves These Pain Points',
+        items: [
+          {
+            title: 'Action > Analytics',
+            description: 'Translate wearable data into daily, practical actions—no dashboards, just decisions.'
+          },
+          {
+            title: 'Integration Hub',
+            description: 'Combine Oura, Whoop, and other app data in one place for holistic guidance.'
+          },
+          {
+            title: 'Transparent Model',
+            description: 'Be clear about pricing and value; reward early users with lifetime or tiered access.'
+          },
+          {
+            title: 'Personalized Context',
+            description: 'Explain why a recommendation is given (linking data to real-world actions and context).'
+          },
+          {
+            title: 'Flexible Use',
+            description: 'Don\'t require users to wear one device 24/7 for value—work with what\'s available.'
+          }
+        ]
+      },
       features: [
         {
           feature: 'Focus',
@@ -465,6 +500,41 @@ export const translations = {
     // Comparison
     comparison: {
       title: 'Wie sich Senzei unterscheidet',
+      userQuotes: {
+        title: 'Was Nutzer wirklich über Gesundheits-Apps sagen',
+        quotes: [
+          '"Ich liebe die Daten, aber ich weiß nicht, was ich damit anfangen soll."',
+          '"Ich wünschte, die App würde mir einfach sagen, was heute am wichtigsten ist."',
+          '"Ich möchte alles an einem Ort – nicht ein Dutzend Dashboards und Abonnements."',
+          '"Es ist teuer, besonders mit dem Abonnement zusätzlich zum Gerät."',
+          '"Großartig zum Verfolgen, aber nicht für tägliche Entscheidungen."'
+        ]
+      },
+      solutions: {
+        title: 'Wie Senzei diese Probleme löst',
+        items: [
+          {
+            title: 'Handlung > Analytik',
+            description: 'Wearable-Daten in tägliche, praktische Handlungen übersetzen – keine Dashboards, nur Entscheidungen.'
+          },
+          {
+            title: 'Integrations-Hub',
+            description: 'Oura-, Whoop- und andere App-Daten an einem Ort für ganzheitliche Beratung kombinieren.'
+          },
+          {
+            title: 'Transparentes Modell',
+            description: 'Klarheit über Preise und Wert; frühe Nutzer mit lebenslangem oder gestuftem Zugang belohnen.'
+          },
+          {
+            title: 'Personalisierter Kontext',
+            description: 'Erklären, warum eine Empfehlung gegeben wird (Daten mit realen Handlungen und Kontext verknüpfen).'
+          },
+          {
+            title: 'Flexible Nutzung',
+            description: 'Nicht verlangen, dass Nutzer ein Gerät 24/7 tragen müssen – mit dem arbeiten, was verfügbar ist.'
+          }
+        ]
+      },
       features: [
         {
           feature: 'Fokus',
