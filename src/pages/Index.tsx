@@ -1,9 +1,9 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Pullquote from "@/components/Pullquote";
 import Features from "@/components/Features";
+import DataToActionSection from "@/components/DataToActionSection";
 import About from "@/components/About";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
@@ -39,8 +39,9 @@ const Index = () => {
       <Pullquote quoteKey="decisions" />
       <Features />
       <Pullquote quoteKey="clarity" />
-      <About />
+      <DataToActionSection />
       <Pullquote quoteKey="action" />
+      <About />
       <AISnapshot />
       <Comparison />
       <Evolution />

@@ -39,6 +39,53 @@ export const translations = {
         }
       ]
     },
+    // Data to Action Section
+    dataToAction: {
+      title: 'From Data to Daily Action',
+      subtitle: 'Senzei uses cutting-edge AI to transform your health data into clear, practical recommendations—so you spend less time analyzing and more time performing.',
+      howItWorks: {
+        title: 'How It Works',
+        steps: [
+          {
+            title: 'Connect Your Data',
+            description: 'Link your favorite apps and wearables—like Apple Health, Google Fit, Oura, Whoop and more. Senzei gathers only the information you choose to share.'
+          },
+          {
+            title: 'AI-Powered Analysis',
+            description: 'Our proprietary algorithms spot patterns and trends across your sleep, training, recovery, and more—filtering out the noise to focus on what truly matters.'
+          },
+          {
+            title: 'Personalized Briefings',
+            description: 'Each day, you receive a simple, tailored action plan. No confusing dashboards or overwhelming stats—just practical decisions for better results.'
+          },
+          {
+            title: 'Real-World Results',
+            description: 'Senzei\'s recommendations adapt as your routines and goals evolve, ensuring your daily actions stay aligned with your highest performance.'
+          }
+        ]
+      },
+      unique: {
+        title: 'What Makes Senzei Unique',
+        points: [
+          {
+            title: 'Action-Focused',
+            description: 'We don\'t just track data—we tell you what to do with it, every day.'
+          },
+          {
+            title: 'Personalization',
+            description: 'Our AI learns your rhythms and adapts recommendations to your evolving needs.'
+          },
+          {
+            title: 'Minimal Friction',
+            description: 'Integrate with the apps and wearables you already use. No manual tracking required.'
+          }
+        ]
+      },
+      privacy: {
+        title: 'Privacy Assurance',
+        description: 'We never sell your data. All information is securely stored and fully under your control.'
+      }
+    },
     // About
     about: {
       title: 'About Senzei',
@@ -286,6 +333,53 @@ export const translations = {
           description: 'Beobachten Sie, wie sich Ihre Gesundheitsmarker im Laufe der Zeit mit intuitiver, minimalistischer Verfolgung verbessern.'
         }
       ]
+    },
+    // Data to Action Section
+    dataToAction: {
+      title: 'Von Daten zu täglichen Handlungen',
+      subtitle: 'Senzei nutzt modernste KI, um Ihre Gesundheitsdaten in klare, praktische Empfehlungen umzuwandeln – damit Sie weniger Zeit mit Analysen und mehr Zeit mit Leistung verbringen.',
+      howItWorks: {
+        title: 'Wie es funktioniert',
+        steps: [
+          {
+            title: 'Verbinden Sie Ihre Daten',
+            description: 'Verknüpfen Sie Ihre Lieblings-Apps und Wearables – wie Apple Health, Google Fit, Oura, Whoop und mehr. Senzei sammelt nur die Informationen, die Sie teilen möchten.'
+          },
+          {
+            title: 'KI-gestützte Analyse',
+            description: 'Unsere proprietären Algorithmen erkennen Muster und Trends in Ihrem Schlaf, Training, Erholung und mehr – filtern das Rauschen heraus, um sich auf das zu konzentrieren, was wirklich wichtig ist.'
+          },
+          {
+            title: 'Personalisierte Briefings',
+            description: 'Jeden Tag erhalten Sie einen einfachen, maßgeschneiderten Aktionsplan. Keine verwirrenden Dashboards oder überwältigenden Statistiken – nur praktische Entscheidungen für bessere Ergebnisse.'
+          },
+          {
+            title: 'Reale Ergebnisse',
+            description: 'Senzeis Empfehlungen passen sich an, während sich Ihre Routinen und Ziele entwickeln, und stellen sicher, dass Ihre täglichen Handlungen mit Ihrer Höchstleistung im Einklang bleiben.'
+          }
+        ]
+      },
+      unique: {
+        title: 'Was Senzei einzigartig macht',
+        points: [
+          {
+            title: 'Handlungsorientiert',
+            description: 'Wir verfolgen nicht nur Daten – wir sagen Ihnen jeden Tag, was Sie damit tun sollen.'
+          },
+          {
+            title: 'Personalisierung',
+            description: 'Unsere KI lernt Ihre Rhythmen und passt Empfehlungen an Ihre sich entwickelnden Bedürfnisse an.'
+          },
+          {
+            title: 'Minimale Reibung',
+            description: 'Integrieren Sie sich mit den Apps und Wearables, die Sie bereits verwenden. Keine manuelle Verfolgung erforderlich.'
+          }
+        ]
+      },
+      privacy: {
+        title: 'Datenschutzgarantie',
+        description: 'Wir verkaufen niemals Ihre Daten. Alle Informationen werden sicher gespeichert und stehen vollständig unter Ihrer Kontrolle.'
+      }
     },
     // About
     about: {
