@@ -19,7 +19,7 @@ const FAQ = () => {
           </div>
 
           <Accordion type="single" collapsible className="w-full reveal">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 8 }).map((_, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border-b border-senzei-taupe/30">
                 <AccordionTrigger className="text-lg font-medium text-senzei-navy py-4">
                   {t(`faq.items.${index}.question`)}
