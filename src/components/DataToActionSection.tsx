@@ -3,6 +3,7 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/lib/translations";
+import { Quote } from "lucide-react";
 
 const DataToActionSection = () => {
   const { t } = useTranslation();
@@ -67,6 +68,20 @@ const DataToActionSection = () => {
             </Card>
           ))}
         </div>
+
+        {/* Pullquote Section - Moved here */}
+        <section className="py-12 bg-gradient-to-r from-senzei-orange to-senzei-orange/90 mb-16 rounded-3xl">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="flex items-center justify-center mb-4">
+                <Quote className="h-8 w-8 text-white" />
+              </div>
+              <blockquote className="text-xl md:text-2xl font-medium text-white leading-relaxed">
+                "Tired of closed ecosystems? Senzei is the Meta-Brain for your health — finally one app that connects your devices, makes sense of your data, and gives you clear, actionable guidance."
+              </blockquote>
+            </div>
+          </div>
+        </section>
 
         {/* What Makes Senzei Unique - Two Column Layout */}
         <div className="mb-16">
