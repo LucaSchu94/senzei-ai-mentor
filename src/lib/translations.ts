@@ -1,3 +1,4 @@
+
 export type Language = 'en' | 'de';
 
 export const translations = {
@@ -207,7 +208,7 @@ export const translations = {
         },
         {
           feature: 'Data Integration',
-          senzei: 'Smart integration with mood, sleep, HRV, training & nutrition',
+          senzei: 'Supports integration with 3rd-Party Sync (e.g., Apple Health, Strava, Oura)',
           others: 'Limited to single data sources or manual tracking'
         },
         {
@@ -553,7 +554,7 @@ export const translations = {
         },
         {
           feature: 'Datenintegration',
-          senzei: 'Intelligente Integration von Stimmung, Schlaf, HRV, Training & Ernährung',
+          senzei: 'Unterstützt Integration mit 3rd-Party Sync (z.B. Apple Health, Strava, Oura)',
           others: 'Begrenzt auf einzelne Datenquellen oder manuelle Verfolgung'
         },
         {
