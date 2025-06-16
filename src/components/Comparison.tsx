@@ -27,16 +27,16 @@ const Comparison = () => {
             </div>
           </div>
 
-          {/* New Pullquote Section */}
-          <section className="py-12 bg-gradient-to-r from-senzei-navy to-senzei-navy/90 mb-16 rounded-lg reveal">
-            <div className="container mx-auto px-4">
-              <div className="max-w-4xl mx-auto text-center">
-                <blockquote className="text-xl md:text-2xl font-medium text-white leading-relaxed">
+          {/* Updated Pullquote Section */}
+          <div className="mb-16 reveal">
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-senzei-taupe/30">
+              <div className="text-center">
+                <blockquote className="text-xl md:text-2xl font-medium text-senzei-navy leading-relaxed">
                   "Tired of closed ecosystems? Senzei is the Meta-Brain for your health — finally one app that connects your devices, makes sense of your data, and gives you clear, actionable guidance."
                 </blockquote>
               </div>
             </div>
-          </section>
+          </div>
 
           {/* Solutions Section */}
           <div className="mb-16 reveal">
