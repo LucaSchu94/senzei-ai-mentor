@@ -17,40 +17,55 @@ const Hero = () => {
     : "/lovable-uploads/lovable-uploads_hero-eng.png";
   
   return (
-    <section className="min-h-[90vh] flex items-center pt-16 overflow-hidden bg-senzei-navy">
-      <div className="container mx-auto px-4">
+    <section className="min-h-[90vh] flex items-center pt-16 overflow-hidden bg-gradient-primary relative">
+      {/* Floating Elements */}
+      <div className="absolute top-20 left-10 w-16 h-16 bg-senzei-orange/20 rounded-full blur-xl animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-24 h-24 bg-white/10 rounded-full blur-xl animate-float" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-1/2 right-1/4 w-8 h-8 bg-senzei-orange/30 rounded-full blur-lg animate-float" style={{ animationDelay: '2s' }}></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="py-20 bg-senzei-navy rounded-xl shadow-lg p-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white mb-6">
-              {t('hero.title')} <span 
-                className="text-senzei-orange" 
-                dangerouslySetInnerHTML={{ __html: t('hero.titleHighlight') }}
-              />
-            </h1>
-            <p className="text-lg md:text-xl text-white/90 max-w-lg mb-4">
-              {t('hero.description')}
-            </p>
-            <p className="text-white/80 mb-6">
-              {t('hero.subtitle')}
-            </p>
-            <div className="mb-3">
-              <p className="text-senzei-orange font-semibold text-lg">
-                {t('hero.betaOffer')}
+          <div className="py-20">
+            <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 border border-white/20">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white mb-6">
+                {t('hero.title')} <span 
+                  className="text-senzei-orange drop-shadow-lg" 
+                  dangerouslySetInnerHTML={{ __html: t('hero.titleHighlight') }}
+                />
+              </h1>
+              <p className="text-lg md:text-xl text-white/90 max-w-lg mb-4 leading-relaxed">
+                {t('hero.description')}
               </p>
-            </div>
-            <div className="pt-4">
-              <Button 
-                size="lg" 
-                className="bg-senzei-orange hover:bg-senzei-orange/90 text-white rounded-full px-8"
-                onClick={handleJoinWaitlist}
-              >
-                {t('hero.cta')}
-              </Button>
+              <p className="text-white/80 mb-6 leading-relaxed">
+                {t('hero.subtitle')}
+              </p>
+              <div className="mb-6">
+                <div className="bg-senzei-orange/20 backdrop-blur-sm rounded-2xl p-4 border border-senzei-orange/30">
+                  <p className="text-senzei-orange font-semibold text-lg">
+                    {t('hero.betaOffer')}
+                  </p>
+                </div>
+              </div>
+              <div className="pt-4">
+                <Button 
+                  size="lg" 
+                  className="bg-senzei-orange hover:bg-senzei-orange/90 text-white rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+                  onClick={handleJoinWaitlist}
+                >
+                  {t('hero.cta')}
+                </Button>
+              </div>
             </div>
           </div>
           <div className="relative flex justify-center items-center reveal">
-            <div className="absolute w-72 h-72 bg-senzei-orange/20 rounded-full filter blur-3xl"></div>
-            <img src={heroImage} alt="Senzei App Preview" className="relative z-10 max-w-full h-auto md:max-w-[80%] lg:max-w-[75%] rounded-xl shadow-xl" />
+            <div className="absolute w-80 h-80 bg-white/10 rounded-full filter blur-3xl animate-pulse"></div>
+            <div className="relative z-10 transform hover:scale-105 transition-transform duration-300">
+              <img 
+                src={heroImage} 
+                alt="Senzei App Preview" 
+                className="max-w-full h-auto md:max-w-[80%] lg:max-w-[75%] rounded-3xl shadow-2xl border border-white/20" 
+              />
+            </div>
           </div>
         </div>
       </div>

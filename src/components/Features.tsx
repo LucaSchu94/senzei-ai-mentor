@@ -5,19 +5,37 @@ import { useTranslation } from "@/hooks/useTranslation";
 const Features = () => {
   const { t } = useTranslation();
   
-  const icons = [
-    <Bell className="h-10 w-10 text-senzei-orange" />,
-    <Heart className="h-10 w-10 text-senzei-orange" />,
-    <Activity className="h-10 w-10 text-senzei-orange" />,
-    <Calendar className="h-10 w-10 text-senzei-orange" />
+  const features = [
+    {
+      icon: <Bell className="h-8 w-8 text-white" />,
+      gradient: "bg-gradient-purple-orange"
+    },
+    {
+      icon: <Heart className="h-8 w-8 text-white" />,
+      gradient: "bg-gradient-pink-orange"
+    },
+    {
+      icon: <Activity className="h-8 w-8 text-white" />,
+      gradient: "bg-gradient-green-orange"
+    },
+    {
+      icon: <Calendar className="h-8 w-8 text-white" />,
+      gradient: "bg-gradient-blue-orange"
+    }
   ];
 
   return (
-    <section id="features" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="features" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      {/* Background decorations */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-senzei-orange/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-senzei-navy/5 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-senzei-navy mb-4">{t('features.title')}</h2>
-          <p className="text-lg text-senzei-navy/70 max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-senzei-navy mb-6">
+            {t('features.title')}
+          </h2>
+          <p className="text-lg text-senzei-navy/70 max-w-2xl mx-auto leading-relaxed">
             {t('features.subtitle')}
           </p>
         </div>
@@ -26,11 +44,19 @@ const Features = () => {
           {Array.from({ length: 4 }).map((_, index) => (
             <div 
               key={index} 
-              className="p-6 rounded-xl hover:shadow-md transition-all duration-300 bg-white border border-senzei-taupe/30 hover:border-senzei-orange/30 reveal"
+              className="group p-8 rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-senzei-orange/30 reveal transform hover:-translate-y-2"
             >
-              <div className="mb-4">{icons[index]}</div>
-              <h3 className="text-xl font-bold text-senzei-navy mb-2">{t(`features.items.${index}.title`)}</h3>
-              <p className="text-senzei-navy/70">{t(`features.items.${index}.description`)}</p>
+              <div className="mb-6 flex justify-center">
+                <div className={`w-16 h-16 rounded-2xl ${features[index].gradient} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                  {features[index].icon}
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-senzei-navy mb-4 text-center">
+                {t(`features.items.${index}.title`)}
+              </h3>
+              <p className="text-senzei-navy/70 text-center leading-relaxed">
+                {t(`features.items.${index}.description`)}
+              </p>
             </div>
           ))}
         </div>
