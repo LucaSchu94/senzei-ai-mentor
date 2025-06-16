@@ -5,7 +5,7 @@ import { translations } from '@/lib/translations';
 export const useTranslation = () => {
   const { language } = useLanguage();
   
-  const t = (key: string): string => {
+  const t = (key: string): any => {
     const keys = key.split('.');
     let value: any = translations[language];
     
@@ -26,7 +26,7 @@ export const useTranslation = () => {
       }
     }
     
-    return typeof value === 'string' ? value : key;
+    return value;
   };
 
   return { t, language };
