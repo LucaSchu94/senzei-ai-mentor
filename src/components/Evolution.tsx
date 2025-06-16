@@ -53,8 +53,8 @@ const Evolution = () => {
                 <p className="text-lg leading-relaxed">
                   {t('evolution.personalizationSection.content')}
                 </p>
-                <div className="bg-senzei-navy/5 p-4 rounded-lg">
-                  <p className="leading-relaxed">
+                <div className="bg-senzei-orange/10 p-4 rounded-lg border-l-4 border-senzei-orange">
+                  <p className="font-medium text-senzei-navy">
                     {t('evolution.personalizationSection.description')}
                   </p>
                 </div>
