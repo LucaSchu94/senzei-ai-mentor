@@ -1,5 +1,3 @@
-
-
 export type Language = 'en' | 'de';
 
 export const translations = {
@@ -262,7 +260,7 @@ export const translations = {
     pullquotes: {
       decisions: 'Senzei. Your AI-powered health mentor. No dashboards. Just decisions.',
       clarity: 'Don\'t drown in data. Get clarity, structure, and daily decisions.',
-      integration: 'Your WHOOP, Oura, Apple Watch… Senzei makes sense of them all.',
+      integration: 'Your Apple Watch, Oura, Strava... Senzei makes sense of them all.',
       action: 'Less tracking, more action. Senzei tells you what to do—today.'
     },
     // FAQ
@@ -609,7 +607,7 @@ export const translations = {
       decisions: 'Senzei. Ihr KI-gestützter Gesundheitsmentor. Keine Dashboards. Nur Entscheidungen.',
       clarity: 'Ertrinken Sie nicht in Daten. Erhalten Sie Klarheit, Struktur und tägliche Entscheidungen.',
       action: 'Weniger Tracking, mehr Handlung. Senzei sagt Ihnen, was zu tun ist – heute.',
-      integration: 'Ihr WHOOP, Oura, Apple Watch… Senzei macht aus allem einen Sinn.'
+      integration: 'Ihr Apple Watch, Oura, Strava... Senzei macht aus allem einen Sinn.'
     },
     // FAQ
     faq: {
