@@ -179,7 +179,7 @@ export const translations = {
           '"I want everything in one place—not a dozen dashboards and subscriptions."',
           '"It\'s expensive, especially with the subscription on top of the device."',
           '"Great for tracking, but not for daily decisions."',
-          '"External data (chest straps, Apple Health, etc.) cannot be imported. I want the best of all."'
+          '"External data (Polar, Apple Health, etc.) cannot be imported. I want the best of all."'
         ]
       },
       solutions: {
@@ -525,7 +525,7 @@ export const translations = {
           '"Ich möchte alles an einem Ort – nicht ein Dutzend Dashboards und Abonnements."',
           '"Es ist teuer, besonders mit dem Abonnement zusätzlich zum Gerät."',
           '"Großartig zum Verfolgen, aber nicht für tägliche Entscheidungen."',
-          '"Externe Daten (Brustgurte, Apple Health usw.) können nicht importiert werden. Ich möchte das Beste von allem."'
+          '"Externe Daten (Polar, Apple Health usw.) können nicht importiert werden. Ich möchte das Beste von allem."'
         ]
       },
       solutions: {
