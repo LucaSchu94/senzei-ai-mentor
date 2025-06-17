@@ -11,9 +11,10 @@ const Pullquote = ({ quoteKey, customText }: PullquoteProps) => {
   const { t } = useTranslation();
 
   const displayText = customText || (quoteKey ? t(`pullquotes.${quoteKey}`) : "");
+  const isDecisionsQuote = quoteKey === 'decisions';
 
   return (
-    <section className="py-12 bg-gradient-to-r from-senzei-orange to-senzei-orange/90">
+    <section className={`py-12 ${isDecisionsQuote ? 'bg-transparent -mt-20 relative z-20' : 'bg-gradient-to-r from-senzei-orange to-senzei-orange/90'}`}>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center reveal">
           <div className="flex items-center justify-center mb-4">

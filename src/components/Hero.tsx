@@ -17,14 +17,14 @@ const Hero = () => {
     : "/lovable-uploads/lovable-uploads_hero-eng.png";
   
   return (
-    <section className="min-h-[90vh] flex items-center pt-16 overflow-hidden bg-gradient-primary relative">
+    <section className="flex items-start pt-16 overflow-hidden bg-gradient-primary relative pb-20">
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-16 h-16 bg-senzei-orange/20 rounded-full blur-xl animate-float"></div>
       <div className="absolute bottom-20 right-10 w-24 h-24 bg-white/10 rounded-full blur-xl animate-float" style={{ animationDelay: '1s' }}></div>
       <div className="absolute top-1/2 right-1/4 w-8 h-8 bg-senzei-orange/30 rounded-full blur-lg animate-float" style={{ animationDelay: '2s' }}></div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[75vh]">
           <div className="py-20">
             <div className="bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl p-8 border border-white/20">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-white mb-6">
