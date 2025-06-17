@@ -68,14 +68,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* --- Clean blockquote section --- */}
-        <div className="w-full flex flex-col items-center mt-8">
-          <blockquote className="text-2xl sm:text-3xl font-bold italic text-white drop-shadow-lg text-center">
-            Senzei – Your AI powered health mentor
-          </blockquote>
-        </div>
-      </div>
-    </section>
+        
   );
 };
 
