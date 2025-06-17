@@ -17,7 +17,7 @@ const Hero = () => {
     : "/lovable-uploads/lovable-uploads_hero-eng.png";
   
   return (
-    <section className="flex items-start pt-16 overflow-hidden bg-gradient-primary relative pb-32">
+    <section className="flex items-start pt-16 overflow-hidden bg-gradient-primary relative pb-20">
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-16 h-16 bg-senzei-orange/20 rounded-full blur-xl animate-float"></div>
       <div className="absolute bottom-20 right-10 w-24 h-24 bg-white/10 rounded-full blur-xl animate-float" style={{ animationDelay: '1s' }}></div>
@@ -68,7 +68,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        
+      </div>
+    </section>
   );
 };
 
