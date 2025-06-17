@@ -3,11 +3,14 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { Quote } from "lucide-react";
 
 interface PullquoteProps {
-  quoteKey: string;
+  quoteKey?: string;
+  customText?: string;
 }
 
-const Pullquote = ({ quoteKey }: PullquoteProps) => {
+const Pullquote = ({ quoteKey, customText }: PullquoteProps) => {
   const { t } = useTranslation();
+
+  const displayText = customText || (quoteKey ? t(`pullquotes.${quoteKey}`) : "");
 
   return (
     <section className="py-12 bg-gradient-to-r from-senzei-orange to-senzei-orange/90">
@@ -17,7 +20,7 @@ const Pullquote = ({ quoteKey }: PullquoteProps) => {
             <Quote className="h-8 w-8 text-white" />
           </div>
           <blockquote className="text-xl md:text-2xl font-medium text-white leading-relaxed">
-            "{t(`pullquotes.${quoteKey}`)}"
+            "{displayText}"
           </blockquote>
         </div>
       </div>
