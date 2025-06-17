@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
           <div className="relative flex justify-center items-center reveal">
             <div className="absolute w-80 h-80 bg-white/10 rounded-full filter blur-3xl animate-pulse"></div>
-            <div className="relative z-10 transform hover:scale-105 transition-transform duration-300">
+            <div className="relative z-10 flex justify-center transform hover:scale-105 transition-transform duration-300">
               <img 
                 src={heroImage} 
                 alt="Senzei App Preview" 
