@@ -69,8 +69,8 @@ const Hero = () => {
           </div>
         </div>
         {/* --- Quote block added here --- */}
-        <div className="w-full flex flex-col items-center mt-8">
-          <div className="text-4xl text-white opacity-70 mb-2">❝</div>
+        <div className="w-full flex flex-col items-center py-12 bg-senzei-orange">
+  <div className="text-5xl text-white mb-6">❞</div>
           <blockquote className="text-2xl sm:text-3xl font-bold italic text-white drop-shadow-lg text-center">
             Senzei – Your AI powered health mentor
           </blockquote>
