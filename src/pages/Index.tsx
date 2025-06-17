@@ -45,7 +45,6 @@ const Index = () => {
       <About />
       <AISnapshot />
       <Comparison />
-      <Pullquote customText="Senzei. Your AI-powered health mentor. No dashboards. Just decisions." />
       <Evolution />
       <Pullquote quoteKey="integration" />
       <FAQ />
