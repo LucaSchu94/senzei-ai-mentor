@@ -21,7 +21,7 @@ const Navbar = () => {
         isVisible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between px-4 md:px-6 py-4">
+      <div className="container mx-auto flex items-center justify-between px-4 md:px-6 py-2">
         <a href="#" className="flex items-center">
           <img alt="Senzei Logo" src="/lovable-uploads/36e93789-c927-47ca-a517-ccd7609e6fc4.png" className="h-[100px] w-200 object-contain" />
         </a>
