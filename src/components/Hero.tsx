@@ -17,7 +17,7 @@ const Hero = () => {
     : "/lovable-uploads/lovable-uploads_hero-eng.png";
   
   return (
-    <section className="flex items-start pt-16 overflow-hidden bg-gradient-primary relative pb-20">
+    <section className="flex items-start pt-16 overflow-hidden bg-gradient-primary relative pb-32">
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-16 h-16 bg-senzei-orange/20 rounded-full blur-xl animate-float"></div>
       <div className="absolute bottom-20 right-10 w-24 h-24 bg-white/10 rounded-full blur-xl animate-float" style={{ animationDelay: '1s' }}></div>
@@ -67,6 +67,13 @@ const Hero = () => {
               />
             </div>
           </div>
+        </div>
+        {/* --- Quote block added here --- */}
+        <div className="w-full flex flex-col items-center mt-8">
+          <div className="text-4xl text-white opacity-70 mb-2">❝</div>
+          <blockquote className="text-2xl sm:text-3xl font-bold italic text-white drop-shadow-lg text-center">
+            Senzei – Your AI powered health mentor
+          </blockquote>
         </div>
       </div>
     </section>
