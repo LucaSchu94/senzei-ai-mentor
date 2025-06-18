@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Pullquote from "@/components/Pullquote";
 import Features from "@/components/Features";
 import DataToActionSection from "@/components/DataToActionSection";
 import About from "@/components/About";
@@ -37,16 +36,12 @@ const Index = () => {
       <RevealOnScroll />
       <Navbar />
       <Hero />
-      <Pullquote quoteKey="decisions" />
       <Features />
-      <Pullquote quoteKey="clarity" />
       <DataToActionSection />
-      <Pullquote quoteKey="action" />
       <About />
       <AISnapshot />
       <Comparison />
       <Evolution />
-      <Pullquote quoteKey="integration" />
       <FAQ />
       <CTA />
       <Footer />
